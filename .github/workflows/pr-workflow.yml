@@ -61,6 +61,8 @@ jobs:
           python-version: '3.12'
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+        inputs:
+          run-only-recorded-tests: 'true'
 
   Run_Test_Mac_Azure_CLI_Released_Version:
     needs: Build_Publish_Azure_CLI_Test_SDK
@@ -73,6 +75,8 @@ jobs:
           run-with-azure-cli-released: 'true'
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+        inputs:
+          run-only-recorded-tests: 'true'
 
   Run_Test_Windows:
     needs: Build_Publish_Azure_CLI_Test_SDK
