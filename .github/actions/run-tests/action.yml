@@ -23,7 +23,7 @@ runs:
     - if: ${{ inputs.run-with-azure-cli-released == 'false' }}
       uses: ./.github/actions/install-azure-cli-edge
     - if: ${{ inputs.run-with-azure-cli-released == 'true' }}
-      uses: ./.github/actions/install-azure-cli-edge
+      uses: ./.github/actions/install-azure-cli-released
     - uses: ./.github/actions/download-install-local-azure-test-sdk
     - uses: ./.github/actions/setup-ci-machine
     - uses: ./.github/actions/download-install-local-azure-devops-cli-extension
