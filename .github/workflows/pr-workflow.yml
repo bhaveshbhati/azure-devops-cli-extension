@@ -164,13 +164,12 @@ jobs:
     needs: Build_Publish_Azure_CLI_Test_SDK
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Checkout old release
-        run: git checkout release-1.0.1
+      - uses: actions/checkout@v4
+        with:
+          ref: release-1.0.1
       - uses: ./.github/actions/run-tests
         with:
           python-version: '3.12'
-          run-only-recorded-tests: 'true'
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
 
