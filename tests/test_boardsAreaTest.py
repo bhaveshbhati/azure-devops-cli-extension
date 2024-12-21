@@ -121,7 +121,7 @@ class BoardsAreaTest(DevopsScenarioTest):
 
             child_area2_path = child_area2_path.replace("Area\\", '')
             child_area2_path = child_area2_path[1:]
-            team_area_add_cmd = 'az boards area team add --path "' + child_area2_path + '" --team ' + team_name + ' --project ' + random_project_name + ' --output json --detect false'
+            team_area_add_cmd = 'az boards area team add --path "' + child_area2_path + '" --team ' + team_name + ' --project ' + random_project_name + ' --set-as-default --output json --detect false'
             team_area_add = self.cmd(team_area_add_cmd).get_output_in_json()
             assert len(team_area_add['values']) == 2
         

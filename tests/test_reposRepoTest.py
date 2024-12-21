@@ -10,7 +10,8 @@ from azure.cli.testsdk.scenario_tests import AllowLargeResponse
 from .utilities.helper import (
     DevopsScenarioTest, get_random_name, disable_telemetry, set_authentication, get_test_org_from_env_variable)
 
-DEVOPS_CLI_TEST_ORGANIZATION = get_test_org_from_env_variable() or 'Https://dev.azure.com/v-anvashist0376'
+DEVOPS_CLI_TEST_ORGANIZATION = get_test_org_from_env_variable() or 'https://dev.azure.com/v-anvashist0376'
+PROJECT_NAME = 'RepoCreateListShowDeleteTests'
 
 class ReposRepoTests(DevopsScenarioTest):
     @AllowLargeResponse(size_kb=3072)
@@ -22,37 +23,36 @@ class ReposRepoTests(DevopsScenarioTest):
         
         created_repo_id = None
         try:
-            create_repo_command = 'az repos create --name ' + random_name +' --project RepoCreateListShowDeleteTests --output json --detect false'
+            create_repo_command = f'az repos create --name {random_name} --project {PROJECT_NAME} --output json --detect false'
             repo_create_output = self.cmd(create_repo_command).get_output_in_json()
             created_repo_id = repo_create_output["id"]
             created_repo_name = repo_create_output["name"]
             assert len(created_repo_id) > 0
 
-            list_repo_command = 'az repos list --project RepoCreateListShowDeleteTests --output json  --detect false'
+            list_repo_command = f'az repos list --project {PROJECT_NAME} --output json --detect false'
             verified_repo_list = False
             list_repo_output_before_delete = self.cmd(list_repo_command).get_output_in_json()
             for repos in list_repo_output_before_delete:
-                if(repos["id"] == created_repo_id):
+                if repos["id"] == created_repo_id:
                     verified_repo_list = True
             assert verified_repo_list == True
 
-            show_repo_command = 'az repos show -r ' + created_repo_id + ' --project RepoCreateListShowDeleteTests --output json --detect false'
+            show_repo_command = f'az repos show -r {created_repo_id} --project {PROJECT_NAME} --output json --detect false'
             show_repo_output = self.cmd(show_repo_command).get_output_in_json()
             assert show_repo_output["id"] == created_repo_id
             
             updated_repo_name = created_repo_name + 'Updated'
-            update_repo_command = 'az repos update -r ' + created_repo_id + ' -p RepoCreateListShowDeleteTests --name ' + updated_repo_name  + ' -o json --detect false'
+            update_repo_command = f'az repos update -r {created_repo_id} -p {PROJECT_NAME} --name {updated_repo_name} -o json --detect false'
             update_repo_output = self.cmd(update_repo_command).get_output_in_json()
             assert update_repo_output["id"] == created_repo_id
             assert update_repo_output["name"] == updated_repo_name
 
         finally:
-            delete_repo_command = 'az repos delete --id ' + created_repo_id + ' --project RepoCreateListShowDeleteTests -y --output json --detect false'
+            delete_repo_command = f'az repos delete --id {created_repo_id} --project {PROJECT_NAME} -y --output json --detect false'
             self.cmd(delete_repo_command)
             
-            #Verify Deletion
+            # Verify Deletion
             list_repo_output_after_delete = self.cmd(list_repo_command).get_output_in_json()
             for repos in list_repo_output_after_delete:
-                if(repos["id"] == created_repo_id):
+                if repos["id"] == created_repo_id:
                     assert 0
-                    

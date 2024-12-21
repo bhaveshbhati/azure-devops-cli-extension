@@ -50,6 +50,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+          AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Run_Test_Mac:
     needs: Build_Publish_Azure_CLI_Test_SDK
@@ -61,6 +62,7 @@ jobs:
           python-version: '3.12'
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+          AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Run_Test_Mac_Azure_CLI_Released_Version:
     needs: Build_Publish_Azure_CLI_Test_SDK
@@ -73,6 +75,7 @@ jobs:
           run-with-azure-cli-released: 'true'
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+          AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Run_Test_Windows:
     needs: Build_Publish_Azure_CLI_Test_SDK
@@ -86,6 +89,7 @@ jobs:
           python-version: '3.12'
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+          AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Code_Coverage:
     needs: Build_Publish_Azure_CLI_Test_SDK
@@ -164,15 +168,16 @@ jobs:
     needs: Build_Publish_Azure_CLI_Test_SDK
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Checkout old release
-        run: git checkout release-1.0.1
+      - uses: actions/checkout@v4
+        with:
+          ref: release-1.0.1
       - uses: ./.github/actions/run-tests
         with:
           python-version: '3.12'
           run-only-recorded-tests: 'true'
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+          AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Check_Back_Compat_Arguments:
     runs-on: windows-latest
@@ -185,6 +190,8 @@ jobs:
           architecture: x64
       - uses: ./.github/actions/setup-ci-machine
       - uses: ./.github/actions/install-azure-cli-edge
+      - name: Install setuptools
+        run: pip install setuptools==70.0.0
       - name: Build wheel for Azure DevOps CLI extension
         run: python setup.py sdist bdist_wheel
         working-directory: 'azure-devops/'
