@@ -38,20 +38,11 @@ jobs:
   Run_Test_Ubuntu:
     needs: Build_Publish_Azure_CLI_Test_SDK
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version:
-          - '3.12'
-          - '3.11'
-          - '3.10'
-          - '3.9'
     steps:
       - uses: actions/checkout@v2
       - name: Remove azureExtensionDir
         run: sudo rm -R -f /usr/local/lib/azureExtensionDir
       - uses: ./.github/actions/run-tests
-        with:
-          python-version: ${{ matrix.python-version }}
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
           AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
@@ -59,18 +50,9 @@ jobs:
   Run_Test_Mac:
     needs: Build_Publish_Azure_CLI_Test_SDK
     runs-on: macos-13
-    strategy:
-      matrix:
-        python-version:
-          - '3.12'
-          - '3.11'
-          - '3.10'
-          - '3.9'
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/run-tests
-        with:
-          python-version: ${{ matrix.python-version }}
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
           AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
@@ -78,18 +60,10 @@ jobs:
   Run_Test_Mac_Azure_CLI_Released_Version:
     needs: Build_Publish_Azure_CLI_Test_SDK
     runs-on: macos-13
-    strategy:
-      matrix:
-        python-version:
-          - '3.12'
-          - '3.11'
-          - '3.10'
-          - '3.9'
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/run-tests
         with:
-          python-version: ${{ matrix.python-version }}
           run-with-azure-cli-released: 'true'
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
@@ -98,20 +72,11 @@ jobs:
   Run_Test_Windows:
     needs: Build_Publish_Azure_CLI_Test_SDK
     runs-on: windows-latest
-    strategy:
-      matrix:
-        python-version:
-          - '3.12'
-          - '3.11'
-          - '3.10'
-          - '3.9'
     steps:
       - uses: actions/checkout@v2
       - name: Rename AzureCliExtensionDirectory
         run: ren "C:\Program Files\Common Files\AzureCliExtensionDirectory" "C:\Program Files\Common Files\AzureCliExtensionDirectory1"
       - uses: ./.github/actions/run-tests
-        with:
-          python-version: ${{ matrix.python-version }}
         env:
           AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
           AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
