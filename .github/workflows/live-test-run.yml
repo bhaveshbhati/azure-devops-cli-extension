@@ -82,10 +82,12 @@ jobs:
       run: python scripts/prepareLiveRecordingTestsRun.py
       env:
         AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+        AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
       shell: bash
 
     - name: Run Live Tests
       run: pytest tests --junitxml "TEST-results.xml"
       env:
         AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+        AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
       shell: bash
