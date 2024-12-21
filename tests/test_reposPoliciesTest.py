@@ -53,7 +53,7 @@ class DevopsReposPoliciesTests(DevopsScenarioTest):
             show_policy_output = self.cmd(show_policy_command).get_output_in_json()
             assert show_policy_output["id"] == policy_id
             assert show_policy_output["type"]["id"] == 'fa4e907d-c16b-4a4c-9dfa-4916e5d171ab' #id of merge strategy policy
-            self.failUnlessRaises(KeyError, lambda: show_policy_output["settings"]["useSquashMerge"])
+            self.assertRaises(KeyError, lambda: show_policy_output["settings"]["useSquashMerge"])
 
             update_policy_command = 'az repos policy merge-strategy update --id ' + str(policy_id) + ' --use-squash-merge True --output json --detect false'
             update_policy_output = self.cmd(update_policy_command).get_output_in_json()
@@ -74,8 +74,8 @@ class DevopsReposPoliciesTests(DevopsScenarioTest):
             self.sleep_in_live_run(5)
 
             show_policy_output = self.cmd(show_policy_command).get_output_in_json()
-            self.failUnlessRaises(KeyError, lambda: show_policy_output["settings"]["useSquashMerge"])
-            self.failUnlessRaises(KeyError, lambda: show_policy_output["settings"]["allowSquash"])
+            self.assertRaises(KeyError, lambda: show_policy_output["settings"]["useSquashMerge"])
+            self.assertRaises(KeyError, lambda: show_policy_output["settings"]["allowSquash"])
             assert show_policy_output["settings"]["allowRebase"] == True
 
             delete_policy_command = 'az repos policy delete --id ' + str(policy_id) + ' -p ' + created_project_id + ' --output json --detect false -y'
@@ -103,8 +103,8 @@ class DevopsReposPoliciesTests(DevopsScenarioTest):
 
             show_policy_command = 'az repos policy show --id ' + str(policy_id) + ' -p ' + created_project_id + ' --output json --detect false'
             show_policy_output = self.cmd(show_policy_command).get_output_in_json()
-            self.failUnlessRaises(KeyError, lambda: show_policy_output["settings"]["useSquashMerge"])
-            self.failUnlessRaises(KeyError, lambda: show_policy_output["settings"]["allowRebase"])
+            self.assertRaises(KeyError, lambda: show_policy_output["settings"]["useSquashMerge"])
+            self.assertRaises(KeyError, lambda: show_policy_output["settings"]["allowRebase"])
             assert show_policy_output["settings"]["allowSquash"] == True
             assert show_policy_output["settings"]["allowRebaseMerge"] == True
 

@@ -11,113 +11,39 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/projects?stateFilter=all&$top=1&$skip=0
-  response:
-    body:
-      string: '{"count":1,"value":[{"id":"22e4c578-d246-4efa-83b6-92dd693e7a02","name":"TestSupportProject","url":"https://dev.azure.com/v-anvashist0376/_apis/projects/22e4c578-d246-4efa-83b6-92dd693e7a02","state":"wellFormed","revision":81,"visibility":"organization","lastUpdateTime":"2023-12-26T07:53:47.123Z"}]}'
-    headers:
-      access-control-expose-headers:
-      - Request-Context
-      activityid:
-      - a78c3eb3-33a2-45f1-b74c-31c0ec410831
-      cache-control:
-      - no-cache
-      content-length:
-      - '300'
-      content-type:
-      - application/json; charset=utf-8; api-version=5.0
-      date:
-      - Tue, 26 Dec 2023 10:42:39 GMT
-      expires:
-      - '-1'
-      p3p:
-      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV
-        STA UNI COM INT PHY ONL FIN PUR LOC CNT"
-      pragma:
-      - no-cache
-      request-context:
-      - appId=cid-v1:0f8b2d32-fdff-4d39-87b8-548fb9450eb7
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      vary:
-      - Accept-Encoding
-      x-cache:
-      - CONFIG_NOCACHE
-      x-content-type-options:
-      - nosniff
-      x-frame-options:
-      - SAMEORIGIN
-      x-ms-continuationtoken:
-      - '1'
-      x-msedge-ref:
-      - 'Ref A: CACD7C76E9564257B92DDFBE4AB95A21 Ref B: MAA01EDGE0514 Ref C: 2023-12-26T10:42:39Z'
-      x-tfs-processid:
-      - a421c168-ddc4-463a-b786-5467b0c2b31f
-      x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
-      x-vss-e2eid:
-      - a78c3eb3-33a2-45f1-b74c-31c0ec410831
-      x-vss-senderdeploymentid:
-      - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
-      x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json;api-version=5.0
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
-      X-TFS-FedAuthRedirect:
-      - Suppress
-      X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
-      X-VSS-ForceMsaPassThrough:
-      - 'true'
-    method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/process/processes
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/process/processes
   response:
     body:
       string: '{"count":4,"value":[{"id":"6b724908-ef14-45cf-84f8-768b5384da45","description":"This
-        template is for teams who follow the Scrum framework.","isDefault":false,"type":"system","url":"https://dev.azure.com/v-anvashist0376/_apis/process/processes/6b724908-ef14-45cf-84f8-768b5384da45","name":"Scrum"},{"id":"b8a3a935-7e91-48b8-a94c-606d37c3e9f2","description":"This
+        template is for teams who follow the Scrum framework.","isDefault":false,"type":"system","url":"https://dev.azure.com/bhaveshbhati900130/_apis/process/processes/6b724908-ef14-45cf-84f8-768b5384da45","name":"Scrum"},{"id":"b8a3a935-7e91-48b8-a94c-606d37c3e9f2","description":"This
         template is flexible for any process and great for teams getting started with
-        Azure DevOps.","isDefault":true,"type":"system","url":"https://dev.azure.com/v-anvashist0376/_apis/process/processes/b8a3a935-7e91-48b8-a94c-606d37c3e9f2","name":"Basic"},{"id":"adcc42ab-9882-485e-a3ed-7678f01f66bc","description":"This
+        Azure DevOps.","isDefault":true,"type":"system","url":"https://dev.azure.com/bhaveshbhati900130/_apis/process/processes/b8a3a935-7e91-48b8-a94c-606d37c3e9f2","name":"Basic"},{"id":"adcc42ab-9882-485e-a3ed-7678f01f66bc","description":"This
         template is flexible and will work great for most teams using Agile planning
-        methods, including those practicing Scrum.","isDefault":false,"type":"system","url":"https://dev.azure.com/v-anvashist0376/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc","name":"Agile"},{"id":"27450541-8e31-4150-9947-dc59f998fc01","description":"This
+        methods, including those practicing Scrum.","isDefault":false,"type":"system","url":"https://dev.azure.com/bhaveshbhati900130/_apis/process/processes/adcc42ab-9882-485e-a3ed-7678f01f66bc","name":"Agile"},{"id":"27450541-8e31-4150-9947-dc59f998fc01","description":"This
         template is for more formal projects requiring a framework for process improvement
-        and an auditable record of decisions.","isDefault":false,"type":"system","url":"https://dev.azure.com/v-anvashist0376/_apis/process/processes/27450541-8e31-4150-9947-dc59f998fc01","name":"CMMI"}]}'
+        and an auditable record of decisions.","isDefault":false,"type":"system","url":"https://dev.azure.com/bhaveshbhati900130/_apis/process/processes/27450541-8e31-4150-9947-dc59f998fc01","name":"CMMI"}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - dce10b9a-0cbc-4792-a796-5eabb212901f
+      - 349ca4b7-683d-4bb0-8043-24b041d01fb1
       cache-control:
       - no-cache
       content-length:
-      - '1298'
+      - '1310'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:39 GMT
+      - Sat, 21 Dec 2024 11:22:24 GMT
       expires:
       - '-1'
       p3p:
@@ -138,17 +64,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: D292480FFF5D4D108BAA0575CFD90D06 Ref B: HYD30EDGE0219 Ref C: 2023-12-26T10:42:40Z'
+      - 'Ref A: 4BD2BC7721D34FECA241A19D7F609E3E Ref B: SG2EDGE2420 Ref C: 2024-12-21T11:22:24Z'
       x-tfs-processid:
-      - a5367410-0a34-4628-9210-dfa2afaeeb02
+      - 32e8f428-605f-41f0-a205-68d4a819422d
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - dce10b9a-0cbc-4792-a796-5eabb212901f
+      - 349ca4b7-683d-4bb0-8043-24b041d01fb1
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -168,32 +94,32 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: POST
-    uri: https://dev.azure.com/v-anvashist0376/_apis/projects
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/projects
   response:
     body:
-      string: '{"id":"15bc1d11-2818-42ee-8360-1ab2030d019b","status":"notSet","url":"https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b"}'
+      string: '{"id":"99cab054-aea7-412c-8244-d755f6c3595d","status":"notSet","url":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d"}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b29b05f-b738-4ef0-b975-9c46a48f2f45
+      - 7b2d060c-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '163'
+      - '166'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:40 GMT
+      - Sat, 21 Dec 2024 11:22:24 GMT
       expires:
       - '-1'
       p3p:
@@ -212,17 +138,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 52A7014199C94EDABDC5CCCA65E2EA16 Ref B: HYD30EDGE0120 Ref C: 2023-12-26T10:42:40Z'
+      - 'Ref A: 30A8BCF3909F4581AD788F4456A0D271 Ref B: SG1EDGE0109 Ref C: 2024-12-21T11:22:25Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b29b05f-b738-4ef0-b975-9c46a48f2f45
+      - 7b2d060c-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 202
       message: Accepted
@@ -238,32 +164,32 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d
   response:
     body:
-      string: '{"id":"15bc1d11-2818-42ee-8360-1ab2030d019b","status":"inProgress","url":"https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b","_links":{"self":{"href":"https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b"}}}'
+      string: '{"id":"99cab054-aea7-412c-8244-d755f6c3595d","status":"inProgress","url":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d","_links":{"self":{"href":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d"}}}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b29b0b1-b738-4ef0-b975-9c46a48f2f45
+      - 8dc76a04-606d-4df1-8d7d-57e5c02bb9b1
       cache-control:
       - no-cache
       content-length:
-      - '288'
+      - '294'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:40 GMT
+      - Sat, 21 Dec 2024 11:22:25 GMT
       expires:
       - '-1'
       p3p:
@@ -284,17 +210,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 5EF8F7461AAC4288A7993BAFD1EA3869 Ref B: HYD30EDGE0509 Ref C: 2023-12-26T10:42:41Z'
+      - 'Ref A: 523912FE286847D1BEBD37207D3EC059 Ref B: SIN30EDGE0808 Ref C: 2024-12-21T11:22:25Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - e5a2a038-3066-4a23-912d-a3d86500bf68
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b29b0b1-b738-4ef0-b975-9c46a48f2f45
+      - 8dc76a04-606d-4df1-8d7d-57e5c02bb9b1
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -310,32 +236,32 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d
   response:
     body:
-      string: '{"id":"15bc1d11-2818-42ee-8360-1ab2030d019b","status":"inProgress","url":"https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b","_links":{"self":{"href":"https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b"}}}'
+      string: '{"id":"99cab054-aea7-412c-8244-d755f6c3595d","status":"inProgress","url":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d","_links":{"self":{"href":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d"}}}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - dce114b2-0cbc-4792-a796-5eabb212901f
+      - 5c7ea1f0-2a60-4b49-a5a0-4495d331972e
       cache-control:
       - no-cache
       content-length:
-      - '288'
+      - '294'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:41 GMT
+      - Sat, 21 Dec 2024 11:22:26 GMT
       expires:
       - '-1'
       p3p:
@@ -356,17 +282,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: DCB25CA16A9E4B2BBBB5B30837EF8A2F Ref B: HYD30EDGE0217 Ref C: 2023-12-26T10:42:42Z'
+      - 'Ref A: 894E7707EC93417D9DE87FD60FBBFBFA Ref B: SIN30EDGE0511 Ref C: 2024-12-21T11:22:26Z'
       x-tfs-processid:
-      - a5367410-0a34-4628-9210-dfa2afaeeb02
+      - eba0d574-31a9-48e3-b0ab-f62b99cb9bfa
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - dce114b2-0cbc-4792-a796-5eabb212901f
+      - 5c7ea1f0-2a60-4b49-a5a0-4495d331972e
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -382,32 +308,32 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d
   response:
     body:
-      string: '{"id":"15bc1d11-2818-42ee-8360-1ab2030d019b","status":"succeeded","url":"https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b","_links":{"self":{"href":"https://dev.azure.com/v-anvashist0376/_apis/operations/15bc1d11-2818-42ee-8360-1ab2030d019b"}}}'
+      string: '{"id":"99cab054-aea7-412c-8244-d755f6c3595d","status":"inProgress","url":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d","_links":{"self":{"href":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d"}}}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b29b427-b738-4ef0-b975-9c46a48f2f45
+      - 7b2d0888-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '287'
+      - '294'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:42 GMT
+      - Sat, 21 Dec 2024 11:22:27 GMT
       expires:
       - '-1'
       p3p:
@@ -428,17 +354,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 7F1249B3D7F04216AEA63933FD5A7D6F Ref B: HYD30EDGE0106 Ref C: 2023-12-26T10:42:43Z'
+      - 'Ref A: 8F33A1C59C6D442BB8916BAF0B8CA6AD Ref B: SIN30EDGE0210 Ref C: 2024-12-21T11:22:27Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b29b427-b738-4ef0-b975-9c46a48f2f45
+      - 7b2d0888-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -454,33 +380,32 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/projects/Permission_000001?includeCapabilities=true
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d
   response:
     body:
-      string: '{"id":"eb791db9-d2e1-4942-b0c2-d5764843f54a","name":"Permission_000001","url":"https://dev.azure.com/v-anvashist0376/_apis/projects/eb791db9-d2e1-4942-b0c2-d5764843f54a","state":"wellFormed","capabilities":{"processTemplate":{"templateName":"Basic","templateTypeId":"b8a3a935-7e91-48b8-a94c-606d37c3e9f2"},"versioncontrol":{"sourceControlType":"Git","gitEnabled":"True","tfvcEnabled":"False"}},"revision":139,"_links":{"self":{"href":"https://dev.azure.com/v-anvashist0376/_apis/projects/eb791db9-d2e1-4942-b0c2-d5764843f54a"},"collection":{"href":"https://dev.azure.com/v-anvashist0376/_apis/projectCollections/2ad38d1e-3eaf-4769-931c-3a2da67bbb01"},"web":{"href":"https://dev.azure.com/v-anvashist0376/Permission_000001"}},"visibility":"private","defaultTeam":{"id":"4aa2a88a-506f-4991-8411-65e2fcb390ff","name":"Permission_000001
-        Team","url":"https://dev.azure.com/v-anvashist0376/_apis/projects/eb791db9-d2e1-4942-b0c2-d5764843f54a/teams/4aa2a88a-506f-4991-8411-65e2fcb390ff"},"lastUpdateTime":"2023-12-26T10:42:43.437Z"}'
+      string: '{"id":"99cab054-aea7-412c-8244-d755f6c3595d","status":"succeeded","url":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d","_links":{"self":{"href":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/99cab054-aea7-412c-8244-d755f6c3595d"}}}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b29b485-b738-4ef0-b975-9c46a48f2f45
+      - 8dc767d6-606d-4df1-8d7d-57e5c02bb9b1
       cache-control:
       - no-cache
       content-length:
-      - '1025'
+      - '293'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:43 GMT
+      - Sat, 21 Dec 2024 11:22:28 GMT
       expires:
       - '-1'
       p3p:
@@ -501,17 +426,90 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 7B52D00303304DE9A0B6EA6DDE189768 Ref B: HYD30EDGE0116 Ref C: 2023-12-26T10:42:43Z'
+      - 'Ref A: 4F0BAFDD644D4F73BA2988DE3F104449 Ref B: SGEEDGE0508 Ref C: 2024-12-21T11:22:28Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - e5a2a038-3066-4a23-912d-a3d86500bf68
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b29b485-b738-4ef0-b975-9c46a48f2f45
+      - 8dc767d6-606d-4df1-8d7d-57e5c02bb9b1
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json;api-version=5.0
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
+      X-TFS-FedAuthRedirect:
+      - Suppress
+      X-TFS-Session:
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
+      X-VSS-ForceMsaPassThrough:
+      - 'true'
+    method: GET
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/projects/Permission_000001?includeCapabilities=true
+  response:
+    body:
+      string: '{"id":"660ff553-beb6-4b4f-be5d-0c4c13da4399","name":"Permission_000001","url":"https://dev.azure.com/bhaveshbhati900130/_apis/projects/660ff553-beb6-4b4f-be5d-0c4c13da4399","state":"wellFormed","capabilities":{"processTemplate":{"templateName":"Basic","templateTypeId":"b8a3a935-7e91-48b8-a94c-606d37c3e9f2"},"versioncontrol":{"sourceControlType":"Git","gitEnabled":"True","tfvcEnabled":"False"}},"revision":672,"_links":{"self":{"href":"https://dev.azure.com/bhaveshbhati900130/_apis/projects/660ff553-beb6-4b4f-be5d-0c4c13da4399"},"collection":{"href":"https://dev.azure.com/bhaveshbhati900130/_apis/projectCollections/53d326e6-140a-4ae7-a550-33ce71119884"},"web":{"href":"https://dev.azure.com/bhaveshbhati900130/Permission_000001"}},"visibility":"private","defaultTeam":{"id":"44b8ad6a-c63a-4d2b-bd5d-0ff2cde79a99","name":"Permission_000001
+        Team","url":"https://dev.azure.com/bhaveshbhati900130/_apis/projects/660ff553-beb6-4b4f-be5d-0c4c13da4399/teams/44b8ad6a-c63a-4d2b-bd5d-0ff2cde79a99"},"lastUpdateTime":"2024-12-21T11:22:28.347Z"}'
+    headers:
+      access-control-expose-headers:
+      - Request-Context
+      activityid:
+      - 349ca086-683d-4bb0-8043-24b041d01fb1
+      cache-control:
+      - no-cache
+      content-length:
+      - '1040'
+      content-type:
+      - application/json; charset=utf-8; api-version=5.0
+      date:
+      - Sat, 21 Dec 2024 11:22:28 GMT
+      expires:
+      - '-1'
+      p3p:
+      - CP="CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV
+        STA UNI COM INT PHY ONL FIN PUR LOC CNT"
+      pragma:
+      - no-cache
+      request-context:
+      - appId=cid-v1:0f8b2d32-fdff-4d39-87b8-548fb9450eb7
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAMEORIGIN
+      x-msedge-ref:
+      - 'Ref A: B0DB550E3FE640F6AFCED1F09D940109 Ref B: SG1EDGE0318 Ref C: 2024-12-21T11:22:28Z'
+      x-tfs-processid:
+      - 32e8f428-605f-41f0-a205-68d4a819422d
+      x-tfs-session:
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
+      x-vss-e2eid:
+      - 349ca086-683d-4bb0-8043-24b041d01fb1
+      x-vss-senderdeploymentid:
+      - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
+      x-vss-userdata:
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -531,33 +529,33 @@ interactions:
       Content-Type:
       - application/json-patch+json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: PATCH
-    uri: https://vsaex.dev.azure.com/v-anvashist0376/_apis/UserEntitlements?doNotSendInviteForNewUsers=false
+    uri: https://vsaex.dev.azure.com/bhaveshbhati900130/_apis/UserEntitlements?doNotSendInviteForNewUsers=false
   response:
     body:
-      string: '{"id":"a828a589-6f7a-42a7-bbce-c01f0ec94865","status":"succeeded","haveResultsSucceeded":true,"completed":true,"results":[{"userId":"323989e2-d2d7-4483-9903-d20b58fa7258","isSuccess":true,"errors":[],"result":{"user":{"subjectKind":"user","directoryAlias":"new_user_test_outlook.com#EXT#","domain":"72f988bf-86f1-41af-91ab-2d7cd011db47","principalName":"new_user_test@outlook.com","mailAddress":"new_user_test@outlook.com","origin":"aad","originId":"012ed025-5cc0-4f1a-a7da-a98916f8f04f","displayName":"new_user_test@outlook.com","_links":{"self":{"href":"https://vssps.dev.azure.com/v-anvashist0376/_apis/Graph/Users/aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4"},"memberships":{"href":"https://vssps.dev.azure.com/v-anvashist0376/_apis/Graph/Memberships/aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4"},"membershipState":{"href":"https://vssps.dev.azure.com/v-anvashist0376/_apis/Graph/MembershipStates/aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4"},"storageKey":{"href":"https://vssps.dev.azure.com/v-anvashist0376/_apis/Graph/StorageKeys/aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4"},"avatar":{"href":"https://dev.azure.com/v-anvashist0376/_apis/GraphProfile/MemberAvatars/aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4"}},"url":"https://vssps.dev.azure.com/v-anvashist0376/_apis/Graph/Users/aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4","descriptor":"aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4"},"extensions":[],"id":"323989e2-d2d7-4483-9903-d20b58fa7258","accessLevel":{"licensingSource":"account","accountLicenseType":"earlyAdopter","msdnLicenseType":"none","licenseDisplayName":"Early
-        Adopter","status":"pending","statusMessage":"","assignmentSource":"unknown"},"lastAccessedDate":"0001-01-01T00:00:00Z","dateCreated":"2023-12-26T10:28:10.5807902Z","projectEntitlements":[],"groupAssignments":[]}}]}'
+      string: '{"id":"e4bccaaa-e9cd-4c7b-bdbf-cc36143254a7","status":"succeeded","haveResultsSucceeded":true,"completed":true,"results":[{"userId":"81b08a76-33e4-4105-8155-7eaef03eb83a","isSuccess":true,"errors":[],"result":{"user":{"subjectKind":"user","domain":"Windows
+        Live ID","principalName":"new_user_test@outlook.com","mailAddress":"new_user_test@outlook.com","origin":"msa","originId":null,"displayName":"new_user_test@outlook.com","_links":{"self":{"href":"https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Graph/Users/bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t"},"memberships":{"href":"https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Graph/Memberships/bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t"},"membershipState":{"href":"https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Graph/MembershipStates/bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t"},"storageKey":{"href":"https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Graph/StorageKeys/bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t"},"avatar":{"href":"https://dev.azure.com/bhaveshbhati900130/_apis/GraphProfile/MemberAvatars/bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t"}},"url":"https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Graph/Users/bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t","descriptor":"bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t"},"extensions":[],"id":"81b08a76-33e4-4105-8155-7eaef03eb83a","accessLevel":{"licensingSource":"account","accountLicenseType":"stakeholder","msdnLicenseType":"none","licenseDisplayName":"Stakeholder","status":"pending","statusMessage":"","assignmentSource":"unknown"},"lastAccessedDate":"0001-01-01T00:00:00Z","dateCreated":"2024-12-21T10:49:27.8474167Z","projectEntitlements":[],"groupAssignments":[]}}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 7bbb80c3-0473-4152-b553-b8598a044f08
+      - 81c78a33-43ca-4adb-a24f-fe8aeede474c
       cache-control:
       - no-cache
       content-length:
-      - '1862'
+      - '1856'
       content-type:
       - application/json; charset=utf-8; api-version=5.0-preview.2
       date:
-      - Tue, 26 Dec 2023 10:42:44 GMT
+      - Sat, 21 Dec 2024 11:22:30 GMT
       expires:
       - '-1'
       p3p:
@@ -578,17 +576,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 423CC8D113D04981B9F6ADF3C89800B0 Ref B: HYD30EDGE0118 Ref C: 2023-12-26T10:42:44Z'
+      - 'Ref A: 69EECBE7652749558775D96C6E31857C Ref B: SG2EDGE1707 Ref C: 2024-12-21T11:22:29Z'
       x-tfs-processid:
-      - 9affb3fb-8fcf-4fd2-aed3-9bf153783300
+      - 8dc3c208-83c1-478c-b21a-83b45e1915b9
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 7bbb80c3-0473-4152-b553-b8598a044f08
+      - 81c78a33-43ca-4adb-a24f-fe8aeede474c
       x-vss-senderdeploymentid:
       - 60550036-6ed7-6a2e-3bc7-9053b0c2e866
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -604,16 +602,16 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/SecurityNamespaces?localOnly=false
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/SecurityNamespaces?localOnly=false
   response:
     body:
       string: "{\"count\":60,\"value\":[{\"namespaceId\":\"58450c49-b02d-465a-ab12-59ae512d6531\",\"name\":\"Analytics\",\"displayName\":\"Analytics\",\"separatorValue\":\"/\",\"elementLength\":-1,\"writePermission\":2,\"readPermission\":1,\"dataspaceCategory\":\"Default\",\"actions\":[{\"bit\":1,\"name\":\"Read\",\"displayName\":\"View
@@ -695,8 +693,8 @@ interactions:
         Subscription\",\"namespaceId\":\"cb594ebe-87dd-4fc9-ac2c-6a10a4c92046\"},{\"bit\":4,\"name\":\"DeleteSubscriptions\",\"displayName\":\"Delete
         Subscriptions\",\"namespaceId\":\"cb594ebe-87dd-4fc9-ac2c-6a10a4c92046\"},{\"bit\":8,\"name\":\"PublishEvents\",\"displayName\":\"Publish
         Events\",\"namespaceId\":\"cb594ebe-87dd-4fc9-ac2c-6a10a4c92046\"}],\"structureValue\":1,\"extensionType\":null,\"isRemotable\":true,\"useTokenTranslator\":true,\"systemBitMask\":0},{\"namespaceId\":\"3e65f728-f8bc-4ecd-8764-7e378b19bfa7\",\"name\":\"Collection\",\"displayName\":\"Collection\",\"separatorValue\":\":\",\"elementLength\":-1,\"writePermission\":2,\"readPermission\":1,\"dataspaceCategory\":\"Default\",\"actions\":[{\"bit\":1,\"name\":\"GENERIC_READ\",\"displayName\":\"View
-        permissions for this node\",\"namespaceId\":\"3e65f728-f8bc-4ecd-8764-7e378b19bfa7\"},{\"bit\":2,\"name\":\"GENERIC_WRITE\",\"displayName\":\"Edit
-        this node\",\"namespaceId\":\"3e65f728-f8bc-4ecd-8764-7e378b19bfa7\"},{\"bit\":4,\"name\":\"CREATE_PROJECTS\",\"displayName\":\"Create
+        collection-level information\",\"namespaceId\":\"3e65f728-f8bc-4ecd-8764-7e378b19bfa7\"},{\"bit\":2,\"name\":\"GENERIC_WRITE\",\"displayName\":\"Edit
+        collection-level information\",\"namespaceId\":\"3e65f728-f8bc-4ecd-8764-7e378b19bfa7\"},{\"bit\":4,\"name\":\"CREATE_PROJECTS\",\"displayName\":\"Create
         new projects\",\"namespaceId\":\"3e65f728-f8bc-4ecd-8764-7e378b19bfa7\"},{\"bit\":16,\"name\":\"TRIGGER_EVENT\",\"displayName\":\"Trigger
         events\",\"namespaceId\":\"3e65f728-f8bc-4ecd-8764-7e378b19bfa7\"},{\"bit\":32,\"name\":\"MANAGE_TEMPLATE\",\"displayName\":\"Manage
         process template\",\"namespaceId\":\"3e65f728-f8bc-4ecd-8764-7e378b19bfa7\"},{\"bit\":64,\"name\":\"DIAGNOSTIC_TRACE\",\"displayName\":\"Alter
@@ -722,9 +720,9 @@ interactions:
         library item\",\"namespaceId\":\"b7e84409-6553-448a-bbb2-af228e07cbeb\"},{\"bit\":32,\"name\":\"Owner\",\"displayName\":\"Owner\",\"namespaceId\":\"b7e84409-6553-448a-bbb2-af228e07cbeb\"}],\"structureValue\":1,\"extensionType\":null,\"isRemotable\":false,\"useTokenTranslator\":true,\"systemBitMask\":0},{\"namespaceId\":\"83d4c2e6-e57d-4d6e-892b-b87222b7ad20\",\"name\":\"Environment\",\"displayName\":\"Environment\",\"separatorValue\":\"/\",\"elementLength\":-1,\"writePermission\":8,\"readPermission\":1,\"dataspaceCategory\":\"DistributedTask\",\"actions\":[{\"bit\":1,\"name\":\"View\",\"displayName\":\"View\",\"namespaceId\":\"83d4c2e6-e57d-4d6e-892b-b87222b7ad20\"},{\"bit\":2,\"name\":\"Manage\",\"displayName\":\"Manage\",\"namespaceId\":\"83d4c2e6-e57d-4d6e-892b-b87222b7ad20\"},{\"bit\":4,\"name\":\"ManageHistory\",\"displayName\":\"Manage
         history\",\"namespaceId\":\"83d4c2e6-e57d-4d6e-892b-b87222b7ad20\"},{\"bit\":8,\"name\":\"Administer\",\"displayName\":\"Administer
         Permissions\",\"namespaceId\":\"83d4c2e6-e57d-4d6e-892b-b87222b7ad20\"},{\"bit\":16,\"name\":\"Use\",\"displayName\":\"Use\",\"namespaceId\":\"83d4c2e6-e57d-4d6e-892b-b87222b7ad20\"},{\"bit\":32,\"name\":\"Create\",\"displayName\":\"Create\",\"namespaceId\":\"83d4c2e6-e57d-4d6e-892b-b87222b7ad20\"}],\"structureValue\":1,\"extensionType\":null,\"isRemotable\":true,\"useTokenTranslator\":true,\"systemBitMask\":0},{\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\",\"name\":\"Project\",\"displayName\":\"Project\",\"separatorValue\":\":\",\"elementLength\":-1,\"writePermission\":2,\"readPermission\":1,\"dataspaceCategory\":\"Default\",\"actions\":[{\"bit\":1,\"name\":\"GENERIC_READ\",\"displayName\":\"View
-        permissions for this node\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":2,\"name\":\"GENERIC_WRITE\",\"displayName\":\"Edit
-        this node\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":4,\"name\":\"DELETE\",\"displayName\":\"Delete
-        this node\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":8,\"name\":\"PUBLISH_TEST_RESULTS\",\"displayName\":\"Create
+        project-level information\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":2,\"name\":\"GENERIC_WRITE\",\"displayName\":\"Edit
+        project-level information\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":4,\"name\":\"DELETE\",\"displayName\":\"Delete
+        team project\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":8,\"name\":\"PUBLISH_TEST_RESULTS\",\"displayName\":\"Create
         test runs\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":16,\"name\":\"ADMINISTER_BUILD\",\"displayName\":\"Administer
         a build\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":32,\"name\":\"START_BUILD\",\"displayName\":\"Start
         a build\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":64,\"name\":\"EDIT_BUILD_STATUS\",\"displayName\":\"Edit
@@ -746,9 +744,7 @@ interactions:
         project visibility\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":8388608,\"name\":\"CHANGE_PROCESS\",\"displayName\":\"Change
         process of team project\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":16777216,\"name\":\"AGILETOOLS_BACKLOG\",\"displayName\":\"Agile
         backlog management.\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"},{\"bit\":33554432,\"name\":\"AGILETOOLS_PLANS\",\"displayName\":\"Agile
-        plans.\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"}],\"structureValue\":1,\"extensionType\":\"Microsoft.TeamFoundation.ApplicationTier.Plugins.Core.ProjectSecurityExtension\",\"isRemotable\":true,\"useTokenTranslator\":true,\"systemBitMask\":51118080},{\"namespaceId\":\"58b176e7-3411-457a-89d0-c6d0ccb3c52b\",\"name\":\"EventSubscription\",\"displayName\":\"EventSubscription\",\"separatorValue\":\":\",\"elementLength\":-1,\"writePermission\":2,\"readPermission\":1,\"dataspaceCategory\":\"Default\",\"actions\":[{\"bit\":1,\"name\":\"GENERIC_READ\",\"displayName\":\"View
-        permissions for this node\",\"namespaceId\":\"58b176e7-3411-457a-89d0-c6d0ccb3c52b\"},{\"bit\":2,\"name\":\"GENERIC_WRITE\",\"displayName\":\"Edit
-        this node\",\"namespaceId\":\"58b176e7-3411-457a-89d0-c6d0ccb3c52b\"},{\"bit\":4,\"name\":\"UNSUBSCRIBE\",\"displayName\":\"Unsubscribe\",\"namespaceId\":\"58b176e7-3411-457a-89d0-c6d0ccb3c52b\"},{\"bit\":8,\"name\":\"CREATE_SOAP_SUBSCRIPTION\",\"displayName\":\"Create
+        plans.\",\"namespaceId\":\"52d39943-cb85-4d7f-8fa8-c6baac873819\"}],\"structureValue\":1,\"extensionType\":\"Microsoft.TeamFoundation.ApplicationTier.Plugins.Core.ProjectSecurityExtension\",\"isRemotable\":true,\"useTokenTranslator\":true,\"systemBitMask\":51118080},{\"namespaceId\":\"58b176e7-3411-457a-89d0-c6d0ccb3c52b\",\"name\":\"EventSubscription\",\"displayName\":\"EventSubscription\",\"separatorValue\":\":\",\"elementLength\":-1,\"writePermission\":2,\"readPermission\":1,\"dataspaceCategory\":\"Default\",\"actions\":[{\"bit\":1,\"name\":\"GENERIC_READ\",\"displayName\":\"View\",\"namespaceId\":\"58b176e7-3411-457a-89d0-c6d0ccb3c52b\"},{\"bit\":2,\"name\":\"GENERIC_WRITE\",\"displayName\":\"Edit\",\"namespaceId\":\"58b176e7-3411-457a-89d0-c6d0ccb3c52b\"},{\"bit\":4,\"name\":\"UNSUBSCRIBE\",\"displayName\":\"Unsubscribe\",\"namespaceId\":\"58b176e7-3411-457a-89d0-c6d0ccb3c52b\"},{\"bit\":8,\"name\":\"CREATE_SOAP_SUBSCRIPTION\",\"displayName\":\"Create
         a SOAP subscription\",\"namespaceId\":\"58b176e7-3411-457a-89d0-c6d0ccb3c52b\"}],\"structureValue\":1,\"extensionType\":null,\"isRemotable\":false,\"useTokenTranslator\":false,\"systemBitMask\":0},{\"namespaceId\":\"fc5b7b85-5d6b-41eb-8534-e128cb10eb67\",\"name\":\"ProjectAnalysisLanguageMetrics\",\"displayName\":\"ProjectAnalysisLanguageMetrics\",\"separatorValue\":\"\uFFFF\",\"elementLength\":-1,\"writePermission\":2,\"readPermission\":1,\"dataspaceCategory\":\"Default\",\"actions\":[{\"bit\":1,\"name\":\"Read\",\"displayName\":\"View
         Project Analysis language metrics data\",\"namespaceId\":\"fc5b7b85-5d6b-41eb-8534-e128cb10eb67\"},{\"bit\":2,\"name\":\"Write\",\"displayName\":\"Write
         Project Analysis language metrics data\",\"namespaceId\":\"fc5b7b85-5d6b-41eb-8534-e128cb10eb67\"}],\"structureValue\":0,\"extensionType\":null,\"isRemotable\":false,\"useTokenTranslator\":true,\"systemBitMask\":0},{\"namespaceId\":\"bb50f182-8e5e-40b8-bc21-e8752a1e7ae2\",\"name\":\"Tagging\",\"displayName\":\"Tagging\",\"separatorValue\":\"/\",\"elementLength\":-1,\"writePermission\":4,\"readPermission\":1,\"dataspaceCategory\":\"Default\",\"actions\":[{\"bit\":1,\"name\":\"Enumerate\",\"displayName\":\"Enumerate
@@ -848,7 +844,9 @@ interactions:
         build pipeline\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":4096,\"name\":\"DeleteBuildDefinition\",\"displayName\":\"Delete
         build pipeline\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":8192,\"name\":\"OverrideBuildCheckInValidation\",\"displayName\":\"Override
         check-in validation by build\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":16384,\"name\":\"AdministerBuildPermissions\",\"displayName\":\"Administer
-        build permissions\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"}],\"structureValue\":1,\"extensionType\":\"Microsoft.TeamFoundation.Build.Server.BuildSecurityExtension\",\"isRemotable\":true,\"useTokenTranslator\":true,\"systemBitMask\":0},{\"namespaceId\":\"8adf73b7-389a-4276-b638-fe1653f7efc7\",\"name\":\"DashboardsPrivileges\",\"displayName\":null,\"separatorValue\":\"/\",\"elementLength\":-1,\"writePermission\":16,\"readPermission\":1,\"dataspaceCategory\":\"Default\",\"actions\":[{\"bit\":1,\"name\":\"Read\",\"displayName\":\"Read\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":2,\"name\":\"Create\",\"displayName\":\"Create
+        build permissions\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":32768,\"name\":\"CreateBuildDefinition\",\"displayName\":\"Create
+        build pipeline\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":65536,\"name\":\"EditPipelineQueueConfigurationPermission\",\"displayName\":\"Edit
+        queue build configuration\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"}],\"structureValue\":1,\"extensionType\":\"Microsoft.TeamFoundation.Build.Server.BuildSecurityExtension\",\"isRemotable\":true,\"useTokenTranslator\":true,\"systemBitMask\":0},{\"namespaceId\":\"8adf73b7-389a-4276-b638-fe1653f7efc7\",\"name\":\"DashboardsPrivileges\",\"displayName\":null,\"separatorValue\":\"/\",\"elementLength\":-1,\"writePermission\":16,\"readPermission\":1,\"dataspaceCategory\":\"Default\",\"actions\":[{\"bit\":1,\"name\":\"Read\",\"displayName\":\"Read\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":2,\"name\":\"Create\",\"displayName\":\"Create
         dashboard\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":4,\"name\":\"Edit\",\"displayName\":\"Edit
         dashboard\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":8,\"name\":\"Delete\",\"displayName\":\"Delete
         dashboard\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":16,\"name\":\"ManagePermissions\",\"displayName\":\"ManagePermissions\",\"namespaceId\":\"00000000-0000-0000-0000-000000000000\"},{\"bit\":32,\"name\":\"MaterializeDashboards\",\"displayName\":\"Materialize
@@ -875,15 +873,15 @@ interactions:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - a78c3186-33a2-45f1-b74c-31c0ec410831
+      - 7b2d0ba9-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '57440'
+      - '57745'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:45 GMT
+      - Sat, 21 Dec 2024 11:22:30 GMT
       expires:
       - '-1'
       p3p:
@@ -904,17 +902,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 6DA4FC8C7A9F4B26B29615D604FCFA62 Ref B: HYD30EDGE0206 Ref C: 2023-12-26T10:42:45Z'
+      - 'Ref A: 994F266EE511499EBFCA32A0D9E2F1B9 Ref B: SGEEDGE0506 Ref C: 2024-12-21T11:22:30Z'
       x-tfs-processid:
-      - a421c168-ddc4-463a-b786-5467b0c2b31f
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - a78c3186-33a2-45f1-b74c-31c0ec410831
+      - 7b2d0ba9-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -930,22 +928,22 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
       string: '{"count":1,"value":[{"namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819","name":"Project","displayName":"Project","separatorValue":":","elementLength":-1,"writePermission":2,"readPermission":1,"dataspaceCategory":"Default","actions":[{"bit":1,"name":"GENERIC_READ","displayName":"View
-        permissions for this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
+        team project","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
         test runs","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":16,"name":"ADMINISTER_BUILD","displayName":"Administer
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":32,"name":"START_BUILD","displayName":"Start
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":64,"name":"EDIT_BUILD_STATUS","displayName":"Edit
@@ -972,15 +970,15 @@ interactions:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b29b70d-b738-4ef0-b975-9c46a48f2f45
+      - 5c7ea653-2a60-4b49-a5a0-4495d331972e
       cache-control:
       - no-cache
       content-length:
-      - '3779'
+      - '3798'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:44 GMT
+      - Sat, 21 Dec 2024 11:22:30 GMT
       expires:
       - '-1'
       p3p:
@@ -1001,17 +999,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: E80604FF2A184F159802C231702E0A31 Ref B: MAA01EDGE0815 Ref C: 2023-12-26T10:42:45Z'
+      - 'Ref A: 07EEEA46D4BC44D0872E77228D918768 Ref B: SIN30EDGE0418 Ref C: 2024-12-21T11:22:31Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - eba0d574-31a9-48e3-b0ab-f62b99cb9bfa
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b29b70d-b738-4ef0-b975-9c46a48f2f45
+      - 5c7ea653-2a60-4b49-a5a0-4495d331972e
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1027,32 +1025,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://vssps.dev.azure.com/v-anvashist0376/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
+    uri: https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
   response:
     body:
-      string: '{"count":1,"value":[{"id":"323989e2-d2d7-4483-9903-d20b58fa7258","descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","subjectDescriptor":"aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"PUID":{"$type":"System.String","$value":"aad:"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2023-12-26T00:00:00Z"},"http://schemas.microsoft.com/identity/claims/objectidentifier":{"$type":"System.String","$value":"012ed025-5cc0-4f1a-a7da-a98916f8f04f"},"DirectoryAlias":{"$type":"System.String","$value":"new_user_test_outlook.com#EXT#"}},"resourceVersion":2,"metaTypeId":255}]}'
+      string: '{"count":1,"value":[{"id":"81b08a76-33e4-4105-8155-7eaef03eb83a","descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","subjectDescriptor":"bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"Windows
+        Live ID"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2024-12-21T00:00:00Z"}},"resourceVersion":2,"metaTypeId":255}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2ca88287-9544-4d7e-8901-ab0235432865
+      - b08232bf-1913-455d-b26c-5c57d09a77f6
       cache-control:
       - no-cache
       content-length:
-      - '1221'
+      - '922'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:45 GMT
+      - Sat, 21 Dec 2024 11:22:31 GMT
       expires:
       - '-1'
       p3p:
@@ -1061,7 +1061,7 @@ interactions:
       pragma:
       - no-cache
       request-context:
-      - appId=cid-v1:f4305046-1403-437e-b451-856fed7b0a7d
+      - appId=cid-v1:e8d8a949-f76c-47ff-b69c-d3c2f886fb87
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -1073,17 +1073,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 4A3EA26E8A08499482EF11BA2DAA6779 Ref B: HYD30EDGE0218 Ref C: 2023-12-26T10:42:46Z'
+      - 'Ref A: F63823B335F345E88AAC7B3E282FC4F3 Ref B: SG2EDGE1509 Ref C: 2024-12-21T11:22:31Z'
       x-tfs-processid:
-      - 28701034-f1e7-44e5-a3f7-5d4381177c3a
+      - ce1e2b96-f8dd-44df-8301-d69550948f78
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2ca88287-9544-4d7e-8901-ab0235432865
+      - b08232bf-1913-455d-b26c-5c57d09a77f6
       x-vss-senderdeploymentid:
-      - 12151c76-78d9-45df-bc19-5b98a8c97843
+      - dc23afe4-07dd-489d-8cb5-e2597f346f09
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1099,32 +1099,162 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?descriptors=Microsoft.IdentityModel.Claims.ClaimsIdentity%3B72f988bf-86f1-41af-91ab-2d7cd011db47%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?descriptors=Microsoft.TeamFoundation.BindPendingIdentity%3Bupn%3AWindows%20Live%20ID%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
   response:
     body:
-      string: '{"count":15,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/038b46ac-29b9-4062-af82-87b52e73d7a9","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/22e4c578-d246-4efa-83b6-92dd693e7a02","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/3960fabe-a085-4c72-8db4-99dce7f3d991","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/41b8d8d8-b4a3-479a-8434-bf6e0139ee86","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/4b280cc8-5b35-4f55-8398-a412b715d130","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/70642ceb-5192-4e9e-8ec0-865714dc08b7","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/82f02fb4-752b-49be-a47f-d3f34e01e941","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/8a03df55-b6ba-4839-80cc-3e3ec0c9aadc","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/8a7db689-c15e-4975-821f-ae137838b2e6","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/8e5e7d2b-a463-4212-992b-c39fe01768f9","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/9492dc92-7b1c-4753-b74f-7a5b882ca576","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/94b55e6d-cff6-48ed-8da0-e4d10a3d707f","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/b023dc57-8bd5-493a-b139-54ae60562ae9","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/f154249e-730d-4403-ac3b-f1257d367f98","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true}]}'
+      string: '{"count":65,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/04842c58-091e-4644-87ec-38eb2239c2fa","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/0bea4454-78b8-49fb-b9d2-068904a4fa79","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/143573d9-dcf6-4168-bba2-3e43ecdcdf89","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/1ee4d8c8-88b1-43af-90b9-d5432f0e61f1","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/22ffdd4f-50ca-4b48-a296-32c194e1c202","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/240aba2c-d307-42b5-aa94-6a1a94487381","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/26459079-4a03-472c-9d4e-a5c5ac0fbd21","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/30141637-fe7e-4796-bb22-b228771b6303","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/3aca7555-2dd3-453c-b339-60a180936dbf","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/412ddd21-de33-45f4-a13e-f1c20c6e843c","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/4287a628-2aef-4f15-bf78-fdba2c061f9e","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/4fbb3a8c-7612-4acc-882b-f8c2437885e0","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/509adaf6-dc7f-495a-9f28-7054d0a5ea5c","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/5512d058-baa4-47e7-a193-1c62a67162ed","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/5884bf8f-36c3-4755-b328-b6880a2ae682","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/6207ad7c-43a2-4e1f-8eec-c7841cd740a1","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/6e009a49-66a3-4153-b59a-9f0b2ac4a394","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/6e95ca43-6b31-4ac7-a55b-d73296ff76ed","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/726746e9-b0fc-44c7-a9e1-7b970b498169","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/776e64fe-8e30-4182-8db7-1d7e1a3f6e79","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/781be608-5dc2-4930-a749-cbe82b39ae48","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/795e7900-e711-4eab-aada-cdf827e84591","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/7c65df44-9221-41ac-b124-c8c1142cf5c8","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/7e163cac-0582-4ceb-b4a2-114bf9057737","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/8321410c-456e-4b25-9d0e-bbe10944c8dc","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/8385b542-9e6b-427d-be08-ed1668bd3fe6","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/8540659c-0f75-4bb6-a0d0-bdc2244bdc96","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/8a7fa843-6adb-4ac4-8da4-00e753b5cad8","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/8d67570c-9e5e-4af2-ac29-32fd00fd0ee4","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/92053258-940e-4d7b-a7a7-e989d0c13589","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/95514b2f-68c3-4e8d-a8a7-9eb13cd0cc43","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/96e9f283-fdea-4230-94c2-33dd1694a7ed","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/9cfd6ee8-170c-4fb2-91ec-f5576d086d57","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/a1c15128-7b70-4f75-9773-9c6b74f19f58","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/a3f732ec-45da-4bea-a923-22c4a5951b5b","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/a52187a0-e6f4-4def-9878-355e3168cfa0","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/b29c7091-cac2-4037-ad2b-4d7aecfa98c3","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/b68ecc30-d2a4-4bd8-b899-195ef35d52ed","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/b77414c0-5664-42a3-8bd7-3d2dc4f4b9e1","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/ba78374f-39a2-43db-8927-d45c167169db","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/bb7ef75a-ea4f-4e5c-b1b3-2db1bd00c0ba","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/bf135b74-c819-4296-81d9-1377ed3cd555","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/c0974a87-40c3-4584-9a41-af5a3d965c60","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/c2cda62d-fa61-463e-b985-bc57ddfcf4f4","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/c7842d86-1186-49ea-a5d6-61a62bd94663","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/ca8f5dc5-dc06-41c7-b9fe-06d8a26363f9","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/cc696290-9f94-430c-8050-5343f824fc70","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/d92f62fc-fd85-4809-bbfa-48f456d69981","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/dc9d4fcb-f2df-41c7-a2ae-01585a4f061c","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/dd441517-cc53-49d8-8a57-63722ff66b89","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/de1b0c58-f8b4-47fe-9acd-91c783afee87","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/de5bfe84-21c7-4bb1-b18e-efd8e62d9061","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/de93e170-847e-432a-8806-b95c118cb05f","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/df9fcc2d-b315-450c-93c4-4a6a75844ce7","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/e1bc9ace-c41b-47b7-a616-9dd180b64735","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/e211267b-ab44-4308-b51b-a9776c8e5d4c","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/e41506d7-53fb-4477-8558-06f0c4b41ed4","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/e4549d02-b9ac-47d1-b8bc-0a6603121e42","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/e86d7cbf-b75d-4da6-abe3-b0621b053386","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/eda13ee7-65c9-4be4-80bd-9386dc47dccf","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/edec6d6c-86e4-4e04-99ea-e5c78f9ec6e9","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/ef0bdafd-8734-4337-8aa1-242752b49c61","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/f61a4fec-ef35-40b3-a980-f33f105343b8","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true},{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/fee83171-68cd-4cf5-8c42-b99f9182240e","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - a78c33e7-33a2-45f1-b74c-31c0ec410831
+      - f477de83-22a8-4dfc-939d-7d39b3cb0d04
       cache-control:
       - no-cache
       content-length:
-      - '6652'
+      - '26412'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:45 GMT
+      - Sat, 21 Dec 2024 11:22:32 GMT
       expires:
       - '-1'
       p3p:
@@ -1145,17 +1275,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: E8B45EF930664CC586C91C9EC0C9E766 Ref B: HYD30EDGE0315 Ref C: 2023-12-26T10:42:46Z'
+      - 'Ref A: 09B82A0480694D7B8C018ADEA5835D74 Ref B: SG1EDGE0210 Ref C: 2024-12-21T11:22:31Z'
       x-tfs-processid:
-      - a421c168-ddc4-463a-b786-5467b0c2b31f
+      - 5a94763c-a4c3-48a2-b2f8-c98591a1229e
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - a78c33e7-33a2-45f1-b74c-31c0ec410831
+      - f477de83-22a8-4dfc-939d-7d39b3cb0d04
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1171,32 +1301,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://vssps.dev.azure.com/v-anvashist0376/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
+    uri: https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
   response:
     body:
-      string: '{"count":1,"value":[{"id":"323989e2-d2d7-4483-9903-d20b58fa7258","descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","subjectDescriptor":"aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"PUID":{"$type":"System.String","$value":"aad:"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2023-12-26T00:00:00Z"},"http://schemas.microsoft.com/identity/claims/objectidentifier":{"$type":"System.String","$value":"012ed025-5cc0-4f1a-a7da-a98916f8f04f"},"DirectoryAlias":{"$type":"System.String","$value":"new_user_test_outlook.com#EXT#"}},"resourceVersion":2,"metaTypeId":255}]}'
+      string: '{"count":1,"value":[{"id":"81b08a76-33e4-4105-8155-7eaef03eb83a","descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","subjectDescriptor":"bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"Windows
+        Live ID"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2024-12-21T00:00:00Z"}},"resourceVersion":2,"metaTypeId":255}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2ca89d55-9544-4d7e-8901-ab0235432865
+      - a50ec274-14eb-4197-bb5c-bcb93c3c10f8
       cache-control:
       - no-cache
       content-length:
-      - '1221'
+      - '922'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:46 GMT
+      - Sat, 21 Dec 2024 11:22:32 GMT
       expires:
       - '-1'
       p3p:
@@ -1205,7 +1337,7 @@ interactions:
       pragma:
       - no-cache
       request-context:
-      - appId=cid-v1:f4305046-1403-437e-b451-856fed7b0a7d
+      - appId=cid-v1:e8d8a949-f76c-47ff-b69c-d3c2f886fb87
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -1217,17 +1349,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 0A99FD10361E4E5B821A0888A36F0B8A Ref B: HYD30EDGE0115 Ref C: 2023-12-26T10:42:46Z'
+      - 'Ref A: 0DF64415DCE94DF9ADEBFAF771333D5A Ref B: SG1EDGE0115 Ref C: 2024-12-21T11:22:32Z'
       x-tfs-processid:
-      - 28701034-f1e7-44e5-a3f7-5d4381177c3a
+      - 2d6995de-bce8-4228-8b50-aea35c78a497
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2ca89d55-9544-4d7e-8901-ab0235432865
+      - a50ec274-14eb-4197-bb5c-bcb93c3c10f8
       x-vss-senderdeploymentid:
-      - 12151c76-78d9-45df-bc19-5b98a8c97843
+      - dc23afe4-07dd-489d-8cb5-e2597f346f09
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1243,32 +1375,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2Feb791db9-d2e1-4942-b0c2-d5764843f54a&descriptors=Microsoft.IdentityModel.Claims.ClaimsIdentity%3B72f988bf-86f1-41af-91ab-2d7cd011db47%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2F660ff553-beb6-4b4f-be5d-0c4c13da4399&descriptors=Microsoft.TeamFoundation.BindPendingIdentity%3Bupn%3AWindows%20Live%20ID%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
   response:
     body:
-      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true}]}'
+      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 69ea62a7-4327-42d4-8fd2-bee467a29635
+      - 8dc76395-606d-4df1-8d7d-57e5c02bb9b1
       cache-control:
       - no-cache
       content-length:
-      - '463'
+      - '427'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:47 GMT
+      - Sat, 21 Dec 2024 11:22:32 GMT
       expires:
       - '-1'
       p3p:
@@ -1289,17 +1423,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: B15509A6CA2A47608984DB87C235FB58 Ref B: HYD30EDGE0515 Ref C: 2023-12-26T10:42:47Z'
+      - 'Ref A: 2E60C3A0DF424DBAADB6B3F4192C56E3 Ref B: SG1EDGE0219 Ref C: 2024-12-21T11:22:32Z'
       x-tfs-processid:
-      - 5e753df1-fd2e-44f6-bad2-b296bcaa59f7
+      - e5a2a038-3066-4a23-912d-a3d86500bf68
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 69ea62a7-4327-42d4-8fd2-bee467a29635
+      - 8dc76395-606d-4df1-8d7d-57e5c02bb9b1
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1315,22 +1449,22 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
       string: '{"count":1,"value":[{"namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819","name":"Project","displayName":"Project","separatorValue":":","elementLength":-1,"writePermission":2,"readPermission":1,"dataspaceCategory":"Default","actions":[{"bit":1,"name":"GENERIC_READ","displayName":"View
-        permissions for this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
+        team project","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
         test runs","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":16,"name":"ADMINISTER_BUILD","displayName":"Administer
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":32,"name":"START_BUILD","displayName":"Start
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":64,"name":"EDIT_BUILD_STATUS","displayName":"Edit
@@ -1357,15 +1491,15 @@ interactions:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 4abfe669-762f-4689-8be2-850135affbd7
+      - 7b2d0e73-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '3779'
+      - '3798'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:47 GMT
+      - Sat, 21 Dec 2024 11:22:32 GMT
       expires:
       - '-1'
       p3p:
@@ -1386,17 +1520,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 6E82FC48C38F479FA4F8FC0C9235E48C Ref B: HYD30EDGE0120 Ref C: 2023-12-26T10:42:47Z'
+      - 'Ref A: ED05EF77F3EB42848ADB73BAF2D66583 Ref B: SGEEDGE0514 Ref C: 2024-12-21T11:22:33Z'
       x-tfs-processid:
-      - 4ddf15e9-4240-44a8-aa7c-8ffb0fccd83a
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 4abfe669-762f-4689-8be2-850135affbd7
+      - 7b2d0e73-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1412,32 +1546,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://vssps.dev.azure.com/v-anvashist0376/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
+    uri: https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
   response:
     body:
-      string: '{"count":1,"value":[{"id":"323989e2-d2d7-4483-9903-d20b58fa7258","descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","subjectDescriptor":"aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"PUID":{"$type":"System.String","$value":"aad:"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2023-12-26T00:00:00Z"},"http://schemas.microsoft.com/identity/claims/objectidentifier":{"$type":"System.String","$value":"012ed025-5cc0-4f1a-a7da-a98916f8f04f"},"DirectoryAlias":{"$type":"System.String","$value":"new_user_test_outlook.com#EXT#"}},"resourceVersion":2,"metaTypeId":255}]}'
+      string: '{"count":1,"value":[{"id":"81b08a76-33e4-4105-8155-7eaef03eb83a","descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","subjectDescriptor":"bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"Windows
+        Live ID"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2024-12-21T00:00:00Z"}},"resourceVersion":2,"metaTypeId":255}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - c6b0d61d-7f4d-4410-8e60-c914a263b4da
+      - 0f43d00c-3107-4cde-8764-70039fd43661
       cache-control:
       - no-cache
       content-length:
-      - '1221'
+      - '922'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:47 GMT
+      - Sat, 21 Dec 2024 11:22:32 GMT
       expires:
       - '-1'
       p3p:
@@ -1446,7 +1582,7 @@ interactions:
       pragma:
       - no-cache
       request-context:
-      - appId=cid-v1:f4305046-1403-437e-b451-856fed7b0a7d
+      - appId=cid-v1:e8d8a949-f76c-47ff-b69c-d3c2f886fb87
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -1458,24 +1594,24 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 82AE04F40C6046D2B092EA4630A02D84 Ref B: HYD30EDGE0310 Ref C: 2023-12-26T10:42:47Z'
+      - 'Ref A: C35E7529BC3F4AAFAA485DF980F43069 Ref B: SIN30EDGE0315 Ref C: 2024-12-21T11:22:33Z'
       x-tfs-processid:
-      - eb2189ae-e9fd-4748-9175-3c9329ea48ab
+      - 7f3e7a34-b189-4279-bfcf-e72c4ee5bd43
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - c6b0d61d-7f4d-4410-8e60-c914a263b4da
+      - 0f43d00c-3107-4cde-8764-70039fd43661
       x-vss-senderdeploymentid:
-      - 12151c76-78d9-45df-bc19-5b98a8c97843
+      - dc23afe4-07dd-489d-8cb5-e2597f346f09
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
 - request:
-    body: '{"token": "$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a",
+    body: '{"token": "$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399",
       "merge": true, "accessControlEntries": [{"allow": 65536, "deny": 0, "descriptor":
-      "Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com"}]}'
+      "Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows Live ID\\new_user_test@outlook.com"}]}'
     headers:
       Accept:
       - application/json;api-version=5.0
@@ -1484,36 +1620,37 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '291'
+      - '273'
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: POST
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlEntries/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlEntries/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
-      string: '{"count":1,"value":[{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":65536,"deny":0}]}'
+      string: '{"count":1,"value":[{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":65536,"deny":0}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b298aa6-b738-4ef0-b975-9c46a48f2f45
+      - 8dc76241-606d-4df1-8d7d-57e5c02bb9b1
       cache-control:
       - no-cache
       content-length:
-      - '171'
+      - '153'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:47 GMT
+      - Sat, 21 Dec 2024 11:22:32 GMT
       expires:
       - '-1'
       p3p:
@@ -1534,17 +1671,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 08A6C2F8033449278B1F5A87738D7AB1 Ref B: HYD30EDGE0112 Ref C: 2023-12-26T10:42:48Z'
+      - 'Ref A: 3035E15E3E1F4FE7BA6D6F8B450D9592 Ref B: SIN30EDGE0515 Ref C: 2024-12-21T11:22:33Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - e5a2a038-3066-4a23-912d-a3d86500bf68
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b298aa6-b738-4ef0-b975-9c46a48f2f45
+      - 8dc76241-606d-4df1-8d7d-57e5c02bb9b1
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1560,32 +1697,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2Feb791db9-d2e1-4942-b0c2-d5764843f54a&descriptors=Microsoft.IdentityModel.Claims.ClaimsIdentity%3B72f988bf-86f1-41af-91ab-2d7cd011db47%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2F660ff553-beb6-4b4f-be5d-0c4c13da4399&descriptors=Microsoft.TeamFoundation.BindPendingIdentity%3Bupn%3AWindows%20Live%20ID%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
   response:
     body:
-      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true}]}'
+      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":65536,"deny":0,"extendedInfo":{"effectiveAllow":65536}}},"includeExtendedInfo":true}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - a78c0ce2-33a2-45f1-b74c-31c0ec410831
+      - 7b2d0eeb-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '463'
+      - '453'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:47 GMT
+      - Sat, 21 Dec 2024 11:22:33 GMT
       expires:
       - '-1'
       p3p:
@@ -1606,17 +1745,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: B40FABA5FAAB4562B38D29495EA36250 Ref B: HYD30EDGE0122 Ref C: 2023-12-26T10:42:48Z'
+      - 'Ref A: 440E6997FEDE463498B176957C5F6D60 Ref B: SG1EDGE0314 Ref C: 2024-12-21T11:22:33Z'
       x-tfs-processid:
-      - a421c168-ddc4-463a-b786-5467b0c2b31f
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - a78c0ce2-33a2-45f1-b74c-31c0ec410831
+      - 7b2d0eeb-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1632,22 +1771,22 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
       string: '{"count":1,"value":[{"namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819","name":"Project","displayName":"Project","separatorValue":":","elementLength":-1,"writePermission":2,"readPermission":1,"dataspaceCategory":"Default","actions":[{"bit":1,"name":"GENERIC_READ","displayName":"View
-        permissions for this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
+        team project","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
         test runs","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":16,"name":"ADMINISTER_BUILD","displayName":"Administer
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":32,"name":"START_BUILD","displayName":"Start
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":64,"name":"EDIT_BUILD_STATUS","displayName":"Edit
@@ -1674,15 +1813,15 @@ interactions:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 69ea6f81-4327-42d4-8fd2-bee467a29635
+      - 7b2d0eae-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '3779'
+      - '3798'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:48 GMT
+      - Sat, 21 Dec 2024 11:22:33 GMT
       expires:
       - '-1'
       p3p:
@@ -1703,17 +1842,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: B8B053DD65E84399ABB1F4D84A8758EE Ref B: HYD30EDGE0220 Ref C: 2023-12-26T10:42:48Z'
+      - 'Ref A: DECD98B3DBAD4FC19AFEAE77A6BEB6E9 Ref B: SIN30EDGE0316 Ref C: 2024-12-21T11:22:34Z'
       x-tfs-processid:
-      - 5e753df1-fd2e-44f6-bad2-b296bcaa59f7
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 69ea6f81-4327-42d4-8fd2-bee467a29635
+      - 7b2d0eae-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1729,32 +1868,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://vssps.dev.azure.com/v-anvashist0376/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
+    uri: https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
   response:
     body:
-      string: '{"count":1,"value":[{"id":"323989e2-d2d7-4483-9903-d20b58fa7258","descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","subjectDescriptor":"aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"PUID":{"$type":"System.String","$value":"aad:"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2023-12-26T00:00:00Z"},"http://schemas.microsoft.com/identity/claims/objectidentifier":{"$type":"System.String","$value":"012ed025-5cc0-4f1a-a7da-a98916f8f04f"},"DirectoryAlias":{"$type":"System.String","$value":"new_user_test_outlook.com#EXT#"}},"resourceVersion":2,"metaTypeId":255}]}'
+      string: '{"count":1,"value":[{"id":"81b08a76-33e4-4105-8155-7eaef03eb83a","descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","subjectDescriptor":"bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"Windows
+        Live ID"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2024-12-21T00:00:00Z"}},"resourceVersion":2,"metaTypeId":255}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - c6b0d586-7f4d-4410-8e60-c914a263b4da
+      - b08232c4-1913-455d-b26c-5c57d09a77f6
       cache-control:
       - no-cache
       content-length:
-      - '1221'
+      - '922'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:48 GMT
+      - Sat, 21 Dec 2024 11:22:34 GMT
       expires:
       - '-1'
       p3p:
@@ -1763,7 +1904,7 @@ interactions:
       pragma:
       - no-cache
       request-context:
-      - appId=cid-v1:f4305046-1403-437e-b451-856fed7b0a7d
+      - appId=cid-v1:e8d8a949-f76c-47ff-b69c-d3c2f886fb87
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -1775,24 +1916,24 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 119629DEFB004882AF8DB3FCE735FF19 Ref B: MAA01EDGE1517 Ref C: 2023-12-26T10:42:49Z'
+      - 'Ref A: 8994B329ADF549D0A32B5ACE29A29065 Ref B: SG1EDGE0306 Ref C: 2024-12-21T11:22:34Z'
       x-tfs-processid:
-      - eb2189ae-e9fd-4748-9175-3c9329ea48ab
+      - ce1e2b96-f8dd-44df-8301-d69550948f78
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - c6b0d586-7f4d-4410-8e60-c914a263b4da
+      - b08232c4-1913-455d-b26c-5c57d09a77f6
       x-vss-senderdeploymentid:
-      - 12151c76-78d9-45df-bc19-5b98a8c97843
+      - dc23afe4-07dd-489d-8cb5-e2597f346f09
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
 - request:
-    body: '{"token": "$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a",
+    body: '{"token": "$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399",
       "merge": true, "accessControlEntries": [{"allow": 0, "deny": 65536, "descriptor":
-      "Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com"}]}'
+      "Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows Live ID\\new_user_test@outlook.com"}]}'
     headers:
       Accept:
       - application/json;api-version=5.0
@@ -1801,36 +1942,37 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '291'
+      - '273'
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: POST
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlEntries/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlEntries/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
-      string: '{"count":1,"value":[{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":65536}]}'
+      string: '{"count":1,"value":[{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":65536}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 69ea6e85-4327-42d4-8fd2-bee467a29635
+      - 349c9ae8-683d-4bb0-8043-24b041d01fb1
       cache-control:
       - no-cache
       content-length:
-      - '171'
+      - '153'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:49 GMT
+      - Sat, 21 Dec 2024 11:22:34 GMT
       expires:
       - '-1'
       p3p:
@@ -1851,17 +1993,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: A9D574484C824D2B932876DC016A086D Ref B: HYD30EDGE0116 Ref C: 2023-12-26T10:42:49Z'
+      - 'Ref A: B547FA241D9B42F9BEA58D3EC6163BC1 Ref B: SGEEDGE0509 Ref C: 2024-12-21T11:22:34Z'
       x-tfs-processid:
-      - 5e753df1-fd2e-44f6-bad2-b296bcaa59f7
+      - 32e8f428-605f-41f0-a205-68d4a819422d
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 69ea6e85-4327-42d4-8fd2-bee467a29635
+      - 349c9ae8-683d-4bb0-8043-24b041d01fb1
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1877,32 +2019,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2Feb791db9-d2e1-4942-b0c2-d5764843f54a&descriptors=Microsoft.IdentityModel.Claims.ClaimsIdentity%3B72f988bf-86f1-41af-91ab-2d7cd011db47%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2F660ff553-beb6-4b4f-be5d-0c4c13da4399&descriptors=Microsoft.TeamFoundation.BindPendingIdentity%3Bupn%3AWindows%20Live%20ID%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
   response:
     body:
-      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":65536,"deny":0,"extendedInfo":{"effectiveAllow":65536}}},"includeExtendedInfo":true}]}'
+      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":65536,"deny":0,"extendedInfo":{"effectiveAllow":65536}}},"includeExtendedInfo":true}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b298dc7-b738-4ef0-b975-9c46a48f2f45
+      - f47720e4-22a8-4dfc-939d-7d39b3cb0d04
       cache-control:
       - no-cache
       content-length:
-      - '489'
+      - '453'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:48 GMT
+      - Sat, 21 Dec 2024 11:22:34 GMT
       expires:
       - '-1'
       p3p:
@@ -1923,17 +2067,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: B62F5370A7854A24886084E4A007797C Ref B: HYD30EDGE0106 Ref C: 2023-12-26T10:42:49Z'
+      - 'Ref A: F931F9E8A36248B4A17FF115CA8C2650 Ref B: SG1EDGE0117 Ref C: 2024-12-21T11:22:34Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - 5a94763c-a4c3-48a2-b2f8-c98591a1229e
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b298dc7-b738-4ef0-b975-9c46a48f2f45
+      - f47720e4-22a8-4dfc-939d-7d39b3cb0d04
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -1949,22 +2093,22 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
       string: '{"count":1,"value":[{"namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819","name":"Project","displayName":"Project","separatorValue":":","elementLength":-1,"writePermission":2,"readPermission":1,"dataspaceCategory":"Default","actions":[{"bit":1,"name":"GENERIC_READ","displayName":"View
-        permissions for this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
+        team project","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
         test runs","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":16,"name":"ADMINISTER_BUILD","displayName":"Administer
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":32,"name":"START_BUILD","displayName":"Start
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":64,"name":"EDIT_BUILD_STATUS","displayName":"Edit
@@ -1991,15 +2135,15 @@ interactions:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b298e53-b738-4ef0-b975-9c46a48f2f45
+      - 7b2d0ff8-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '3779'
+      - '3798'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:49 GMT
+      - Sat, 21 Dec 2024 11:22:34 GMT
       expires:
       - '-1'
       p3p:
@@ -2020,17 +2164,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 2982D022D0B545A6963887F2FD23AF41 Ref B: MAA01EDGE0810 Ref C: 2023-12-26T10:42:49Z'
+      - 'Ref A: FA4C2BB8775C454F805B11094C8B0921 Ref B: SGEEDGE0511 Ref C: 2024-12-21T11:22:34Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b298e53-b738-4ef0-b975-9c46a48f2f45
+      - 7b2d0ff8-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2046,32 +2190,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://vssps.dev.azure.com/v-anvashist0376/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
+    uri: https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
   response:
     body:
-      string: '{"count":1,"value":[{"id":"323989e2-d2d7-4483-9903-d20b58fa7258","descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","subjectDescriptor":"aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"PUID":{"$type":"System.String","$value":"aad:"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2023-12-26T00:00:00Z"},"http://schemas.microsoft.com/identity/claims/objectidentifier":{"$type":"System.String","$value":"012ed025-5cc0-4f1a-a7da-a98916f8f04f"},"DirectoryAlias":{"$type":"System.String","$value":"new_user_test_outlook.com#EXT#"}},"resourceVersion":2,"metaTypeId":255}]}'
+      string: '{"count":1,"value":[{"id":"81b08a76-33e4-4105-8155-7eaef03eb83a","descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","subjectDescriptor":"bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"Windows
+        Live ID"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2024-12-21T00:00:00Z"}},"resourceVersion":2,"metaTypeId":255}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2ca89c34-9544-4d7e-8901-ab0235432865
+      - b08232dd-1913-455d-b26c-5c57d09a77f6
       cache-control:
       - no-cache
       content-length:
-      - '1221'
+      - '922'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:50 GMT
+      - Sat, 21 Dec 2024 11:22:35 GMT
       expires:
       - '-1'
       p3p:
@@ -2080,7 +2226,7 @@ interactions:
       pragma:
       - no-cache
       request-context:
-      - appId=cid-v1:f4305046-1403-437e-b451-856fed7b0a7d
+      - appId=cid-v1:e8d8a949-f76c-47ff-b69c-d3c2f886fb87
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -2092,17 +2238,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 443420BDD140405FA26E41528BB58025 Ref B: HYD30EDGE0215 Ref C: 2023-12-26T10:42:50Z'
+      - 'Ref A: EABF4DC775BE4D22923C3DDD60937A08 Ref B: SGEEDGE0414 Ref C: 2024-12-21T11:22:34Z'
       x-tfs-processid:
-      - 28701034-f1e7-44e5-a3f7-5d4381177c3a
+      - ce1e2b96-f8dd-44df-8301-d69550948f78
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2ca89c34-9544-4d7e-8901-ab0235432865
+      - b08232dd-1913-455d-b26c-5c57d09a77f6
       x-vss-senderdeploymentid:
-      - 12151c76-78d9-45df-bc19-5b98a8c97843
+      - dc23afe4-07dd-489d-8cb5-e2597f346f09
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2120,32 +2266,33 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: DELETE
-    uri: https://dev.azure.com/v-anvashist0376/_apis/Permissions/52d39943-cb85-4d7f-8fa8-c6baac873819/65536?descriptor=Microsoft.IdentityModel.Claims.ClaimsIdentity%3B72f988bf-86f1-41af-91ab-2d7cd011db47%5Cnew_user_test%40outlook.com&token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2Feb791db9-d2e1-4942-b0c2-d5764843f54a
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/Permissions/52d39943-cb85-4d7f-8fa8-c6baac873819/65536?descriptor=Microsoft.TeamFoundation.BindPendingIdentity%3Bupn%3AWindows%20Live%20ID%5Cnew_user_test%40outlook.com&token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2F660ff553-beb6-4b4f-be5d-0c4c13da4399
   response:
     body:
-      string: '{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0}'
+      string: '{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":0}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b298f59-b738-4ef0-b975-9c46a48f2f45
+      - 8dc76026-606d-4df1-8d7d-57e5c02bb9b1
       cache-control:
       - no-cache
       content-length:
-      - '145'
+      - '127'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:50 GMT
+      - Sat, 21 Dec 2024 11:22:35 GMT
       expires:
       - '-1'
       p3p:
@@ -2166,17 +2313,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: B6AEC9975BDA45438540A5F676C4C5AF Ref B: HYD30EDGE0119 Ref C: 2023-12-26T10:42:50Z'
+      - 'Ref A: 132B2A57D39F4E19B419CBDE6CC66A2A Ref B: SIN30EDGE0319 Ref C: 2024-12-21T11:22:35Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - e5a2a038-3066-4a23-912d-a3d86500bf68
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b298f59-b738-4ef0-b975-9c46a48f2f45
+      - 8dc76026-606d-4df1-8d7d-57e5c02bb9b1
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2192,32 +2339,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2Feb791db9-d2e1-4942-b0c2-d5764843f54a&descriptors=Microsoft.IdentityModel.Claims.ClaimsIdentity%3B72f988bf-86f1-41af-91ab-2d7cd011db47%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2F660ff553-beb6-4b4f-be5d-0c4c13da4399&descriptors=Microsoft.TeamFoundation.BindPendingIdentity%3Bupn%3AWindows%20Live%20ID%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
   response:
     body:
-      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":65536,"extendedInfo":{"effectiveDeny":65536}}},"includeExtendedInfo":true}]}'
+      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":65536,"extendedInfo":{"effectiveDeny":65536}}},"includeExtendedInfo":true}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - a78c088e-33a2-45f1-b74c-31c0ec410831
+      - 7b2d3004-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '488'
+      - '452'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:50 GMT
+      - Sat, 21 Dec 2024 11:22:34 GMT
       expires:
       - '-1'
       p3p:
@@ -2238,17 +2387,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 94647B433185496AA88F903DB1B988A4 Ref B: MAA01EDGE0605 Ref C: 2023-12-26T10:42:51Z'
+      - 'Ref A: 1FF5567D532549D499BCFDC6525911D2 Ref B: SG1EDGE0218 Ref C: 2024-12-21T11:22:35Z'
       x-tfs-processid:
-      - a421c168-ddc4-463a-b786-5467b0c2b31f
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - a78c088e-33a2-45f1-b74c-31c0ec410831
+      - 7b2d3004-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2264,22 +2413,22 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
       string: '{"count":1,"value":[{"namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819","name":"Project","displayName":"Project","separatorValue":":","elementLength":-1,"writePermission":2,"readPermission":1,"dataspaceCategory":"Default","actions":[{"bit":1,"name":"GENERIC_READ","displayName":"View
-        permissions for this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
+        team project","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
         test runs","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":16,"name":"ADMINISTER_BUILD","displayName":"Administer
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":32,"name":"START_BUILD","displayName":"Start
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":64,"name":"EDIT_BUILD_STATUS","displayName":"Edit
@@ -2306,15 +2455,15 @@ interactions:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 4abfe018-762f-4689-8be2-850135affbd7
+      - 8dc76044-606d-4df1-8d7d-57e5c02bb9b1
       cache-control:
       - no-cache
       content-length:
-      - '3779'
+      - '3798'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:50 GMT
+      - Sat, 21 Dec 2024 11:22:35 GMT
       expires:
       - '-1'
       p3p:
@@ -2335,17 +2484,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 7052D5455D4E4C67905F791EDA91254F Ref B: HYD30EDGE0211 Ref C: 2023-12-26T10:42:51Z'
+      - 'Ref A: AE2C816E74EB4422B3E25B305C359D96 Ref B: SIN30EDGE0321 Ref C: 2024-12-21T11:22:35Z'
       x-tfs-processid:
-      - 4ddf15e9-4240-44a8-aa7c-8ffb0fccd83a
+      - e5a2a038-3066-4a23-912d-a3d86500bf68
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 4abfe018-762f-4689-8be2-850135affbd7
+      - 8dc76044-606d-4df1-8d7d-57e5c02bb9b1
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2361,32 +2510,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://vssps.dev.azure.com/v-anvashist0376/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
+    uri: https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
   response:
     body:
-      string: '{"count":1,"value":[{"id":"323989e2-d2d7-4483-9903-d20b58fa7258","descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","subjectDescriptor":"aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"PUID":{"$type":"System.String","$value":"aad:"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2023-12-26T00:00:00Z"},"http://schemas.microsoft.com/identity/claims/objectidentifier":{"$type":"System.String","$value":"012ed025-5cc0-4f1a-a7da-a98916f8f04f"},"DirectoryAlias":{"$type":"System.String","$value":"new_user_test_outlook.com#EXT#"}},"resourceVersion":2,"metaTypeId":255}]}'
+      string: '{"count":1,"value":[{"id":"81b08a76-33e4-4105-8155-7eaef03eb83a","descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","subjectDescriptor":"bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"Windows
+        Live ID"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2024-12-21T00:00:00Z"}},"resourceVersion":2,"metaTypeId":255}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2ca89c90-9544-4d7e-8901-ab0235432865
+      - a50ec2fa-14eb-4197-bb5c-bcb93c3c10f8
       cache-control:
       - no-cache
       content-length:
-      - '1221'
+      - '922'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:50 GMT
+      - Sat, 21 Dec 2024 11:22:35 GMT
       expires:
       - '-1'
       p3p:
@@ -2395,7 +2546,7 @@ interactions:
       pragma:
       - no-cache
       request-context:
-      - appId=cid-v1:f4305046-1403-437e-b451-856fed7b0a7d
+      - appId=cid-v1:e8d8a949-f76c-47ff-b69c-d3c2f886fb87
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -2407,24 +2558,24 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: FCD520274FF145328F29BED41DA6FF6E Ref B: HYD30EDGE0507 Ref C: 2023-12-26T10:42:51Z'
+      - 'Ref A: A260D02F433D421E950581D7AD2614AC Ref B: SG1EDGE0217 Ref C: 2024-12-21T11:22:35Z'
       x-tfs-processid:
-      - 28701034-f1e7-44e5-a3f7-5d4381177c3a
+      - 2d6995de-bce8-4228-8b50-aea35c78a497
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2ca89c90-9544-4d7e-8901-ab0235432865
+      - a50ec2fa-14eb-4197-bb5c-bcb93c3c10f8
       x-vss-senderdeploymentid:
-      - 12151c76-78d9-45df-bc19-5b98a8c97843
+      - dc23afe4-07dd-489d-8cb5-e2597f346f09
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
 - request:
-    body: '{"token": "$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a",
+    body: '{"token": "$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399",
       "merge": true, "accessControlEntries": [{"allow": 0, "deny": 65536, "descriptor":
-      "Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com"}]}'
+      "Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows Live ID\\new_user_test@outlook.com"}]}'
     headers:
       Accept:
       - application/json;api-version=5.0
@@ -2433,36 +2584,37 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '291'
+      - '273'
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: POST
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlEntries/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlEntries/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
-      string: '{"count":1,"value":[{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":65536}]}'
+      string: '{"count":1,"value":[{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":65536}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b298173-b738-4ef0-b975-9c46a48f2f45
+      - f4772370-22a8-4dfc-939d-7d39b3cb0d04
       cache-control:
       - no-cache
       content-length:
-      - '171'
+      - '153'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:51 GMT
+      - Sat, 21 Dec 2024 11:22:35 GMT
       expires:
       - '-1'
       p3p:
@@ -2483,17 +2635,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 11508E85E76944859FA3955406763EC8 Ref B: MAA01EDGE0421 Ref C: 2023-12-26T10:42:51Z'
+      - 'Ref A: 322D036E6B754F1880A55817DBEF5151 Ref B: SGEEDGE0607 Ref C: 2024-12-21T11:22:36Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - 5a94763c-a4c3-48a2-b2f8-c98591a1229e
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b298173-b738-4ef0-b975-9c46a48f2f45
+      - f4772370-22a8-4dfc-939d-7d39b3cb0d04
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2509,32 +2661,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2Feb791db9-d2e1-4942-b0c2-d5764843f54a&descriptors=Microsoft.IdentityModel.Claims.ClaimsIdentity%3B72f988bf-86f1-41af-91ab-2d7cd011db47%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2F660ff553-beb6-4b4f-be5d-0c4c13da4399&descriptors=Microsoft.TeamFoundation.BindPendingIdentity%3Bupn%3AWindows%20Live%20ID%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
   response:
     body:
-      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":65536,"extendedInfo":{"effectiveDeny":65536}}},"includeExtendedInfo":true}]}'
+      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":65536,"extendedInfo":{"effectiveDeny":65536}}},"includeExtendedInfo":true}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - dce125b0-0cbc-4792-a796-5eabb212901f
+      - 5c7eab2c-2a60-4b49-a5a0-4495d331972e
       cache-control:
       - no-cache
       content-length:
-      - '488'
+      - '452'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:51 GMT
+      - Sat, 21 Dec 2024 11:22:36 GMT
       expires:
       - '-1'
       p3p:
@@ -2555,17 +2709,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 3572C0CAFB8D4EC4AF23C64C9D0C7B03 Ref B: HYD30EDGE0219 Ref C: 2023-12-26T10:42:52Z'
+      - 'Ref A: F72DF6C61D734023877E9CDA22154C6D Ref B: SG2EDGE3007 Ref C: 2024-12-21T11:22:36Z'
       x-tfs-processid:
-      - a5367410-0a34-4628-9210-dfa2afaeeb02
+      - eba0d574-31a9-48e3-b0ab-f62b99cb9bfa
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - dce125b0-0cbc-4792-a796-5eabb212901f
+      - 5c7eab2c-2a60-4b49-a5a0-4495d331972e
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2581,22 +2735,22 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
       string: '{"count":1,"value":[{"namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819","name":"Project","displayName":"Project","separatorValue":":","elementLength":-1,"writePermission":2,"readPermission":1,"dataspaceCategory":"Default","actions":[{"bit":1,"name":"GENERIC_READ","displayName":"View
-        permissions for this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
+        team project","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
         test runs","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":16,"name":"ADMINISTER_BUILD","displayName":"Administer
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":32,"name":"START_BUILD","displayName":"Start
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":64,"name":"EDIT_BUILD_STATUS","displayName":"Edit
@@ -2623,15 +2777,15 @@ interactions:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 2b298264-b738-4ef0-b975-9c46a48f2f45
+      - f47722d8-22a8-4dfc-939d-7d39b3cb0d04
       cache-control:
       - no-cache
       content-length:
-      - '3779'
+      - '3798'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:52 GMT
+      - Sat, 21 Dec 2024 11:22:35 GMT
       expires:
       - '-1'
       p3p:
@@ -2652,17 +2806,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 7DC9B9AB8E1E4F5B9F282100B688BCE5 Ref B: HYD30EDGE0514 Ref C: 2023-12-26T10:42:52Z'
+      - 'Ref A: 10FC086273A34F1CA21244D62BE5B06F Ref B: SGEEDGE0715 Ref C: 2024-12-21T11:22:36Z'
       x-tfs-processid:
-      - 2ca4b6d0-34ab-4cea-b50a-e28b53d3d8cf
+      - 5a94763c-a4c3-48a2-b2f8-c98591a1229e
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 2b298264-b738-4ef0-b975-9c46a48f2f45
+      - f47722d8-22a8-4dfc-939d-7d39b3cb0d04
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2678,32 +2832,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://vssps.dev.azure.com/v-anvashist0376/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
+    uri: https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
   response:
     body:
-      string: '{"count":1,"value":[{"id":"323989e2-d2d7-4483-9903-d20b58fa7258","descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","subjectDescriptor":"aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"PUID":{"$type":"System.String","$value":"aad:"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2023-12-26T00:00:00Z"},"http://schemas.microsoft.com/identity/claims/objectidentifier":{"$type":"System.String","$value":"012ed025-5cc0-4f1a-a7da-a98916f8f04f"},"DirectoryAlias":{"$type":"System.String","$value":"new_user_test_outlook.com#EXT#"}},"resourceVersion":2,"metaTypeId":255}]}'
+      string: '{"count":1,"value":[{"id":"81b08a76-33e4-4105-8155-7eaef03eb83a","descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","subjectDescriptor":"bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"Windows
+        Live ID"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2024-12-21T00:00:00Z"}},"resourceVersion":2,"metaTypeId":255}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - c6b0d39f-7f4d-4410-8e60-c914a263b4da
+      - d1ae0f91-5607-4210-8f66-2f7c07a932fb
       cache-control:
       - no-cache
       content-length:
-      - '1221'
+      - '922'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:52 GMT
+      - Sat, 21 Dec 2024 11:22:36 GMT
       expires:
       - '-1'
       p3p:
@@ -2712,7 +2868,7 @@ interactions:
       pragma:
       - no-cache
       request-context:
-      - appId=cid-v1:f4305046-1403-437e-b451-856fed7b0a7d
+      - appId=cid-v1:e8d8a949-f76c-47ff-b69c-d3c2f886fb87
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -2724,17 +2880,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 3289D8D0DBAD41B4A3EC3E96F7117525 Ref B: MAA01EDGE1209 Ref C: 2023-12-26T10:42:52Z'
+      - 'Ref A: 5B705DD14C90445B9EA1A51D5B4E2CE2 Ref B: SGEEDGE0514 Ref C: 2024-12-21T11:22:36Z'
       x-tfs-processid:
-      - eb2189ae-e9fd-4748-9175-3c9329ea48ab
+      - ffce1c3c-7a72-4cdd-945c-a3d094f5308d
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - c6b0d39f-7f4d-4410-8e60-c914a263b4da
+      - d1ae0f91-5607-4210-8f66-2f7c07a932fb
       x-vss-senderdeploymentid:
-      - 12151c76-78d9-45df-bc19-5b98a8c97843
+      - dc23afe4-07dd-489d-8cb5-e2597f346f09
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2752,16 +2908,16 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: DELETE
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlEntries/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2Feb791db9-d2e1-4942-b0c2-d5764843f54a&descriptors=Microsoft.IdentityModel.Claims.ClaimsIdentity%3B72f988bf-86f1-41af-91ab-2d7cd011db47%5Cnew_user_test%40outlook.com
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlEntries/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2F660ff553-beb6-4b4f-be5d-0c4c13da4399&descriptors=Microsoft.TeamFoundation.BindPendingIdentity%3Bupn%3AWindows%20Live%20ID%5Cnew_user_test%40outlook.com
   response:
     body:
       string: 'true'
@@ -2769,7 +2925,7 @@ interactions:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - a78c043c-33a2-45f1-b74c-31c0ec410831
+      - f4772242-22a8-4dfc-939d-7d39b3cb0d04
       cache-control:
       - no-cache
       content-length:
@@ -2777,7 +2933,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:53 GMT
+      - Sat, 21 Dec 2024 11:22:36 GMT
       expires:
       - '-1'
       p3p:
@@ -2798,17 +2954,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: DABB9947196D4C89868AE86D0318A319 Ref B: HYD30EDGE0311 Ref C: 2023-12-26T10:42:53Z'
+      - 'Ref A: 563E6807BDB84CDAA09D2870690EC7BA Ref B: SIN30EDGE0718 Ref C: 2024-12-21T11:22:37Z'
       x-tfs-processid:
-      - a421c168-ddc4-463a-b786-5467b0c2b31f
+      - 5a94763c-a4c3-48a2-b2f8-c98591a1229e
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - a78c043c-33a2-45f1-b74c-31c0ec410831
+      - f4772242-22a8-4dfc-939d-7d39b3cb0d04
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2824,32 +2980,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://vssps.dev.azure.com/v-anvashist0376/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
+    uri: https://vssps.dev.azure.com/bhaveshbhati900130/_apis/Identities?searchFilter=General&filterValue=new_user_test%40outlook.com
   response:
     body:
-      string: '{"count":1,"value":[{"id":"323989e2-d2d7-4483-9903-d20b58fa7258","descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","subjectDescriptor":"aad.NjdiY2I3OGMtZTgyYy03OWRmLWJlMmEtZTRmZjBkOTdhMmM4","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"PUID":{"$type":"System.String","$value":"aad:"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2023-12-26T00:00:00Z"},"http://schemas.microsoft.com/identity/claims/objectidentifier":{"$type":"System.String","$value":"012ed025-5cc0-4f1a-a7da-a98916f8f04f"},"DirectoryAlias":{"$type":"System.String","$value":"new_user_test_outlook.com#EXT#"}},"resourceVersion":2,"metaTypeId":255}]}'
+      string: '{"count":1,"value":[{"id":"81b08a76-33e4-4105-8155-7eaef03eb83a","descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","subjectDescriptor":"bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxuZXdfdXNlcl90ZXN0QG91dGxvb2suY29t","providerDisplayName":"new_user_test@outlook.com","isActive":true,"members":[],"memberOf":[],"memberIds":[],"properties":{"SchemaClassName":{"$type":"System.String","$value":"User"},"Description":{"$type":"System.String","$value":""},"Domain":{"$type":"System.String","$value":"Windows
+        Live ID"},"Account":{"$type":"System.String","$value":"new_user_test@outlook.com"},"DN":{"$type":"System.String","$value":""},"Mail":{"$type":"System.String","$value":"new_user_test@outlook.com"},"SpecialType":{"$type":"System.String","$value":"Generic"},"ComplianceValidated":{"$type":"System.DateTime","$value":"2024-12-21T00:00:00Z"}},"resourceVersion":2,"metaTypeId":255}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 86b98c24-4789-4c82-86c5-022861d8a2ba
+      - a50ec2bd-14eb-4197-bb5c-bcb93c3c10f8
       cache-control:
       - no-cache
       content-length:
-      - '1221'
+      - '922'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:53 GMT
+      - Sat, 21 Dec 2024 11:22:37 GMT
       expires:
       - '-1'
       p3p:
@@ -2858,7 +3016,7 @@ interactions:
       pragma:
       - no-cache
       request-context:
-      - appId=cid-v1:f4305046-1403-437e-b451-856fed7b0a7d
+      - appId=cid-v1:e8d8a949-f76c-47ff-b69c-d3c2f886fb87
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -2870,17 +3028,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: F92A6A6273874C07B857831E64CD7685 Ref B: HYD30EDGE0306 Ref C: 2023-12-26T10:42:53Z'
+      - 'Ref A: ADDFC786C1554AD685827F3E0BB7B1D1 Ref B: SGEEDGE0712 Ref C: 2024-12-21T11:22:37Z'
       x-tfs-processid:
-      - 081c96f1-7db4-4929-bbc8-a489a58d88ad
+      - 2d6995de-bce8-4228-8b50-aea35c78a497
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 86b98c24-4789-4c82-86c5-022861d8a2ba
+      - a50ec2bd-14eb-4197-bb5c-bcb93c3c10f8
       x-vss-senderdeploymentid:
-      - 12151c76-78d9-45df-bc19-5b98a8c97843
+      - dc23afe4-07dd-489d-8cb5-e2597f346f09
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2896,32 +3054,34 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2Feb791db9-d2e1-4942-b0c2-d5764843f54a&descriptors=Microsoft.IdentityModel.Claims.ClaimsIdentity%3B72f988bf-86f1-41af-91ab-2d7cd011db47%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/AccessControlLists/52d39943-cb85-4d7f-8fa8-c6baac873819?token=%24PROJECT%3Avstfs%3A%2F%2F%2FClassification%2FTeamProject%2F660ff553-beb6-4b4f-be5d-0c4c13da4399&descriptors=Microsoft.TeamFoundation.BindPendingIdentity%3Bupn%3AWindows%20Live%20ID%5Cnew_user_test%40outlook.com&includeExtendedInfo=true&recurse=false
   response:
     body:
-      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/eb791db9-d2e1-4942-b0c2-d5764843f54a","acesDictionary":{"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com":{"descriptor":"Microsoft.IdentityModel.Claims.ClaimsIdentity;72f988bf-86f1-41af-91ab-2d7cd011db47\\new_user_test@outlook.com","allow":0,"deny":0,"extendedInfo":{}}},"includeExtendedInfo":true}]}'
+      string: '{"count":1,"value":[{"inheritPermissions":true,"token":"$PROJECT:vstfs:///Classification/TeamProject/660ff553-beb6-4b4f-be5d-0c4c13da4399","acesDictionary":{"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com":{"descriptor":"Microsoft.TeamFoundation.BindPendingIdentity;upn:Windows
+        Live ID\\new_user_test@outlook.com","allow":0,"deny":65536,"extendedInfo":{"effectiveDeny":65536}}},"includeExtendedInfo":true}]}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 69ea942a-4327-42d4-8fd2-bee467a29635
+      - 8dc71e6a-606d-4df1-8d7d-57e5c02bb9b1
       cache-control:
       - no-cache
       content-length:
-      - '463'
+      - '452'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:53 GMT
+      - Sat, 21 Dec 2024 11:22:37 GMT
       expires:
       - '-1'
       p3p:
@@ -2942,17 +3102,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 05A2AD65BA0C4F15B6E75615C406B346 Ref B: HYD30EDGE0208 Ref C: 2023-12-26T10:42:53Z'
+      - 'Ref A: 9B4C190A7B0543E8A45DC3571D942E86 Ref B: SG1EDGE0117 Ref C: 2024-12-21T11:22:37Z'
       x-tfs-processid:
-      - 5e753df1-fd2e-44f6-bad2-b296bcaa59f7
+      - e5a2a038-3066-4a23-912d-a3d86500bf68
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 69ea942a-4327-42d4-8fd2-bee467a29635
+      - 8dc71e6a-606d-4df1-8d7d-57e5c02bb9b1
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -2968,22 +3128,22 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/SecurityNamespaces/52d39943-cb85-4d7f-8fa8-c6baac873819
   response:
     body:
       string: '{"count":1,"value":[{"namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819","name":"Project","displayName":"Project","separatorValue":":","elementLength":-1,"writePermission":2,"readPermission":1,"dataspaceCategory":"Default","actions":[{"bit":1,"name":"GENERIC_READ","displayName":"View
-        permissions for this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
-        this node","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":2,"name":"GENERIC_WRITE","displayName":"Edit
+        project-level information","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":4,"name":"DELETE","displayName":"Delete
+        team project","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":8,"name":"PUBLISH_TEST_RESULTS","displayName":"Create
         test runs","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":16,"name":"ADMINISTER_BUILD","displayName":"Administer
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":32,"name":"START_BUILD","displayName":"Start
         a build","namespaceId":"52d39943-cb85-4d7f-8fa8-c6baac873819"},{"bit":64,"name":"EDIT_BUILD_STATUS","displayName":"Edit
@@ -3010,15 +3170,15 @@ interactions:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 4abfec4f-762f-4689-8be2-850135affbd7
+      - f47725fb-22a8-4dfc-939d-7d39b3cb0d04
       cache-control:
       - no-cache
       content-length:
-      - '3779'
+      - '3798'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:53 GMT
+      - Sat, 21 Dec 2024 11:22:37 GMT
       expires:
       - '-1'
       p3p:
@@ -3039,17 +3199,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 23BE2216D9704D39828446B179E95E7A Ref B: HYD30EDGE0216 Ref C: 2023-12-26T10:42:54Z'
+      - 'Ref A: C141FD1D53CA44E6BEA7C94EA3C3BE58 Ref B: SG2EDGE2209 Ref C: 2024-12-21T11:22:37Z'
       x-tfs-processid:
-      - 4ddf15e9-4240-44a8-aa7c-8ffb0fccd83a
+      - 5a94763c-a4c3-48a2-b2f8-c98591a1229e
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 4abfec4f-762f-4689-8be2-850135affbd7
+      - f47725fb-22a8-4dfc-939d-7d39b3cb0d04
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -3067,32 +3227,32 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: DELETE
-    uri: https://dev.azure.com/v-anvashist0376/_apis/projects/eb791db9-d2e1-4942-b0c2-d5764843f54a
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/projects/660ff553-beb6-4b4f-be5d-0c4c13da4399
   response:
     body:
-      string: '{"id":"dbe8d900-ea15-403f-8595-647a9dc5f29e","status":"notSet","url":"https://dev.azure.com/v-anvashist0376/_apis/operations/dbe8d900-ea15-403f-8595-647a9dc5f29e"}'
+      string: '{"id":"331ebeb7-d613-4e30-96fa-a86f062715c4","status":"notSet","url":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/331ebeb7-d613-4e30-96fa-a86f062715c4"}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 4abfebaa-762f-4689-8be2-850135affbd7
+      - f47725e1-22a8-4dfc-939d-7d39b3cb0d04
       cache-control:
       - no-cache
       content-length:
-      - '163'
+      - '166'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:53 GMT
+      - Sat, 21 Dec 2024 11:22:37 GMT
       expires:
       - '-1'
       p3p:
@@ -3111,17 +3271,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: A026FA25C8BB4B27B74AF5856A8DEB1B Ref B: HYD30EDGE0110 Ref C: 2023-12-26T10:42:54Z'
+      - 'Ref A: 19383C006C134F10BB88E2EE41A33783 Ref B: SGEEDGE0516 Ref C: 2024-12-21T11:22:38Z'
       x-tfs-processid:
-      - 4ddf15e9-4240-44a8-aa7c-8ffb0fccd83a
+      - 5a94763c-a4c3-48a2-b2f8-c98591a1229e
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 4abfebaa-762f-4689-8be2-850135affbd7
+      - f47725e1-22a8-4dfc-939d-7d39b3cb0d04
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 202
       message: Accepted
@@ -3137,32 +3297,32 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/operations/dbe8d900-ea15-403f-8595-647a9dc5f29e
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/operations/331ebeb7-d613-4e30-96fa-a86f062715c4
   response:
     body:
-      string: '{"id":"dbe8d900-ea15-403f-8595-647a9dc5f29e","status":"inProgress","url":"https://dev.azure.com/v-anvashist0376/_apis/operations/dbe8d900-ea15-403f-8595-647a9dc5f29e","_links":{"self":{"href":"https://dev.azure.com/v-anvashist0376/_apis/operations/dbe8d900-ea15-403f-8595-647a9dc5f29e"}}}'
+      string: '{"id":"331ebeb7-d613-4e30-96fa-a86f062715c4","status":"inProgress","url":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/331ebeb7-d613-4e30-96fa-a86f062715c4","_links":{"self":{"href":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/331ebeb7-d613-4e30-96fa-a86f062715c4"}}}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - a78c0647-33a2-45f1-b74c-31c0ec410831
+      - 7b2d3357-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '288'
+      - '294'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:54 GMT
+      - Sat, 21 Dec 2024 11:22:37 GMT
       expires:
       - '-1'
       p3p:
@@ -3183,17 +3343,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: A86D8FD87CB64DFEA8AE09E0B4E945FC Ref B: HYD30EDGE0210 Ref C: 2023-12-26T10:42:54Z'
+      - 'Ref A: 67757BE0DA174696A84EF0E7E686414F Ref B: SG2EDGE2115 Ref C: 2024-12-21T11:22:38Z'
       x-tfs-processid:
-      - a421c168-ddc4-463a-b786-5467b0c2b31f
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - a78c0647-33a2-45f1-b74c-31c0ec410831
+      - 7b2d3357-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK
@@ -3209,32 +3369,32 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       User-Agent:
-      - python/3.10.11 (Windows-10-10.0.22621-SP0) msrest/0.7.1 azure-devops/5.1.0b4
-        devOpsCli/0.26.0
+      - python/3.12.1 (Linux-6.5.0-1025-azure-x86_64-with-glibc2.31) msrest/0.7.1
+        azure-devops/5.1.0b4 devOpsCli/1.0.1
       X-TFS-FedAuthRedirect:
       - Suppress
       X-TFS-Session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       X-VSS-ForceMsaPassThrough:
       - 'true'
     method: GET
-    uri: https://dev.azure.com/v-anvashist0376/_apis/operations/dbe8d900-ea15-403f-8595-647a9dc5f29e
+    uri: https://dev.azure.com/bhaveshbhati900130/_apis/operations/331ebeb7-d613-4e30-96fa-a86f062715c4
   response:
     body:
-      string: '{"id":"dbe8d900-ea15-403f-8595-647a9dc5f29e","status":"succeeded","url":"https://dev.azure.com/v-anvashist0376/_apis/operations/dbe8d900-ea15-403f-8595-647a9dc5f29e","_links":{"self":{"href":"https://dev.azure.com/v-anvashist0376/_apis/operations/dbe8d900-ea15-403f-8595-647a9dc5f29e"}}}'
+      string: '{"id":"331ebeb7-d613-4e30-96fa-a86f062715c4","status":"succeeded","url":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/331ebeb7-d613-4e30-96fa-a86f062715c4","_links":{"self":{"href":"https://dev.azure.com/bhaveshbhati900130/_apis/operations/331ebeb7-d613-4e30-96fa-a86f062715c4"}}}'
     headers:
       access-control-expose-headers:
       - Request-Context
       activityid:
-      - 4abfe907-762f-4689-8be2-850135affbd7
+      - 7b2d347d-07bc-4c04-8243-726de0ebb061
       cache-control:
       - no-cache
       content-length:
-      - '287'
+      - '293'
       content-type:
       - application/json; charset=utf-8; api-version=5.0
       date:
-      - Tue, 26 Dec 2023 10:42:55 GMT
+      - Sat, 21 Dec 2024 11:22:39 GMT
       expires:
       - '-1'
       p3p:
@@ -3255,17 +3415,17 @@ interactions:
       x-frame-options:
       - SAMEORIGIN
       x-msedge-ref:
-      - 'Ref A: 8DB8D4F2E8F94171A7AD1E7D0E472795 Ref B: MAA01EDGE0812 Ref C: 2023-12-26T10:42:56Z'
+      - 'Ref A: D82CA2B9907A4961BA62BF9FBCB72D87 Ref B: SG1EDGE0307 Ref C: 2024-12-21T11:22:39Z'
       x-tfs-processid:
-      - 4ddf15e9-4240-44a8-aa7c-8ffb0fccd83a
+      - 2e5c1698-5f0c-446a-8938-a9de552b8541
       x-tfs-session:
-      - f9099bd1-7925-441d-82e2-4fcaa69d5fbd
+      - 47de4097-9479-45ba-ba5c-83a658c687c9
       x-vss-e2eid:
-      - 4abfe907-762f-4689-8be2-850135affbd7
+      - 7b2d347d-07bc-4c04-8243-726de0ebb061
       x-vss-senderdeploymentid:
       - ed30ce5c-9d0a-f73c-3580-4315c7f84d83
       x-vss-userdata:
-      - 22157d54-1821-6536-a446-928b06348385:v-sbestala@microsoft.com
+      - b74afd16-9f1e-62ef-97c3-d8ba49a8fcba:bhaveshbhati90@outlook.com
     status:
       code: 200
       message: OK

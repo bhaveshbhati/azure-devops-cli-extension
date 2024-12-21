@@ -23,18 +23,13 @@ runs:
     - if: ${{ inputs.run-with-azure-cli-released == 'false' }}
       uses: ./.github/actions/install-azure-cli-edge
     - if: ${{ inputs.run-with-azure-cli-released == 'true' }}
-      uses: ./.github/actions/install-azure-cli-edge
+      uses: ./.github/actions/install-azure-cli-released
     - uses: ./.github/actions/download-install-local-azure-test-sdk
     - uses: ./.github/actions/setup-ci-machine
     - uses: ./.github/actions/download-install-local-azure-devops-cli-extension
     - run: pytest --junitxml "TEST-results.xml"
       if: ${{ inputs.run-only-recorded-tests == 'false' }}
       shell: bash
-      working-directory: 'azure-devops'
     - run: pytest tests --junitxml "TEST-results.xml"
       if: ${{ inputs.run-only-recorded-tests == 'true' }}
       shell: bash
-    - uses: actions/upload-artifact@v4
-      with:
-        name: test-results
-        path: '**TEST-*.xml'
