@@ -53,7 +53,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
         env:
-          AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
           AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Run_Test_Mac:
@@ -72,7 +71,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
         env:
-          AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
           AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Run_Test_Mac_Azure_CLI_Released_Version:
@@ -92,7 +90,6 @@ jobs:
           python-version: ${{ matrix.python-version }}
           run-with-azure-cli-released: 'true'
         env:
-          AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
           AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Run_Test_Windows:
@@ -113,7 +110,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
         env:
-          AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
           AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Code_Coverage:
@@ -201,7 +197,6 @@ jobs:
           python-version: '3.12'
           run-only-recorded-tests: 'true'
         env:
-          AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
           AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
 
   Check_Back_Compat_Arguments:
