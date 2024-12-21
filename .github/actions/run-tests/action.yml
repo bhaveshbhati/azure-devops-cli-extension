@@ -2,6 +2,9 @@
 name: 'Run Tests'
 description: 'Run tests with specified Python version'
 inputs:
+  python-version:
+    description: 'Python version to use'
+    required: true
   run-only-recorded-tests:
     description: 'Run only recorded tests'
     required: false
@@ -12,17 +15,10 @@ inputs:
     default: 'false'
 runs:
   using: 'composite'
-  strategy:
-      matrix:
-        python-version:
-          - '3.12'
-          - '3.11'
-          - '3.10'
-          - '3.9'
   steps:
     - uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: ${{ inputs.python-version }}
         architecture: x64
     - if: ${{ inputs.run-with-azure-cli-released == 'false' }}
       uses: ./.github/actions/install-azure-cli-edge
