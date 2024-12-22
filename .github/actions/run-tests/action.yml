@@ -33,6 +33,8 @@ runs:
     - run: pytest -v tests --junitxml "TEST-results.xml"
       if: ${{ inputs.run-only-recorded-tests == 'true' }}
       shell: bash
-    - uses: actions/upload-artifact@v4
-      name: test-recordings-${{ github.random }}
-      path: ${{ github.workspace }}/azure-devops/tests/recordings
+    - name: Publish recordings
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-recordings-${{ github.random }}
+        path: ${{ github.workspace }}/azure-devops/tests/recordings
