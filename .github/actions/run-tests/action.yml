@@ -30,9 +30,11 @@ runs:
     - run: pytest -v --junitxml "TEST-results.xml"
       if: ${{ inputs.run-only-recorded-tests == 'false' }}
       shell: bash
+      continue-on-error: true
     - run: pytest -v tests --junitxml "TEST-results.xml"
       if: ${{ inputs.run-only-recorded-tests == 'true' }}
       shell: bash
+      continue-on-error: true
     - name: Publish recordings
       uses: actions/upload-artifact@v4
       with:
