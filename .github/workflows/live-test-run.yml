@@ -78,12 +78,12 @@ jobs:
     - name: Download and Install Local Azure DevOps CLI Extension
       uses: ./.github/actions/download-install-local-azure-devops-cli-extension
 
-    - name: Prepare Live Recording Tests Run
-      run: python scripts/prepareLiveRecordingTestsRun.py
-      env:
-        AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
-        AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
-      shell: bash
+    # - name: Prepare Live Recording Tests Run
+    #   run: python scripts/prepareLiveRecordingTestsRun.py
+    #   env:
+    #     AZURE_DEVOPS_EXT_PAT: ${{ secrets.AZURE_DEVOPS_EXT_PAT }}
+    #     AZURE_DEVOPS_EXT_TEST_ORG: ${{ secrets.AZURE_DEVOPS_EXT_TEST_ORG }}
+    #   shell: bash
 
     - name: Run Live Tests
       run: pytest tests --junitxml "TEST-results.xml"
