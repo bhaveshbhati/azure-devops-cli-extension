@@ -30,7 +30,6 @@ runs:
     - run: pytest --junitxml "TEST-results.xml"
       if: ${{ inputs.run-only-recorded-tests == 'false' }}
       shell: bash
-      working-directory: azure-devops
     - run: pytest tests --junitxml "TEST-results.xml"
       if: ${{ inputs.run-only-recorded-tests == 'true' }}
       shell: bash
