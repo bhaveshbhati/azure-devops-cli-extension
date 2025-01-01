@@ -27,3 +27,4 @@ jobs:
           azdev setup -r ./ -e azure-devops
           azdev extension repo add .
           azdev extension add azure-devops
+          az extension list --output table
