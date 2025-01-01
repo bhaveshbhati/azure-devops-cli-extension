@@ -24,6 +24,7 @@ jobs:
           pip install wheel==0.30.0 setuptools==70.0.0
           pip install azdev
           azdev --version
-          azdev setup -r ./
-          az extension list --output table
-          az devops login
+          azdev setup -r ./ -e azure-devops
+          azdev extension repo add .
+          azdev extension add azure-devops
+          azdev test azure-devops
