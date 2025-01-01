@@ -26,3 +26,4 @@ jobs:
           azdev --version
           azdev setup -r ./
           az extension list --output table
+          azdev test azure-devops
