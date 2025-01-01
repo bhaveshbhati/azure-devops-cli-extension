@@ -27,4 +27,4 @@ jobs:
           azdev setup -r ./ -e azure-devops
           azdev extension repo add .
           azdev extension add azure-devops
-          azdev test azure-devops -discover
+          azdev test azure-devops --discover
