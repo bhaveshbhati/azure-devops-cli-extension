@@ -23,4 +23,6 @@ jobs:
           source env/bin/activate
           pip install azdev
           azdev --version
-          azdev setup
+          azdev setup -r ./ -e azure-devops
+          azdev extension repo add .
+          azdev extension add azure-devops
